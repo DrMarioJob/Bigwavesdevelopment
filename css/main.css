@@ -82,10 +82,10 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
 }
 
 article,
@@ -99,37 +99,39 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+    display: block;
 }
 
 body {
-  line-height: 1;
+    line-height: 1;
 }
 
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none;
+    content: '';
+    content: none;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-a, button, input {
+a,
+button,
+input {
     transition: all .3s ease;
     text-decoration: none;
     cursor: pointer;
@@ -309,6 +311,39 @@ body {
     background: none;
 }
 
+.item_slide {
+    display: flex;
+    align-items: end;
+    display: none;
+}
+
+.item_slide.active {
+    display: flex;
+}
+
+.item_slide img {
+    max-width: 100%;
+}
+
+.item_slide1 {
+    position: relative;
+}
+
+.item_slide2 {
+    width: 150px;
+    height: 137px;
+    overflow: hidden;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #434343;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
 .headColSum {
     display: flex;
     align-items: center;
@@ -353,6 +388,17 @@ body {
     height: 230px;
     overflow: hidden;
     border-radius: 40px;
+    position: relative;
+}
+
+.item_slide2 img,
+.ourVideo img {
+    transition: all .3s ease;
+}
+
+.item_slide2:hover img,
+.ourVideo:hover img {
+    transform: scale(1.1);
 }
 
 .ourPhRow {
@@ -362,7 +408,7 @@ body {
 }
 
 
-.ourPhRow span {
+.playBtn {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -372,8 +418,146 @@ body {
     background: #fff;
     border-radius: 100px;
     transition: all .3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
 
-.ourVideo:hover span {
+.item_slide2 .playBtn {
+    width: 50px;
+    height: 50px;
+    background: #1e1e1e;
+}
+
+.mainTeam:hover .playBtn,
+.item_slide1:hover .playBtn,
+.ourVideo:hover .playBtn {
     background: #2EAFA3;
+}
+
+.item_slide2:hover .playBtn {
+    background: #2EAFA3;
+}
+
+.mainTargetRow {
+    display: flex;
+    gap: 24px;
+}
+
+.mainTargetCol {
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    line-height: 19.6px;
+    padding: 20px;
+    min-height: 188px;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.mainTargetCol1 {
+    background: url(../img/rectangle9.svg) bottom right no-repeat,
+        url(../img/rectangle10.svg) bottom right 100px no-repeat;
+}
+
+.mainTargetCol2 {
+    background: url(../img/rectangle11.svg) bottom right no-repeat;
+}
+
+.mainTargetCol3 {
+    background: url(../img/rectangle12.svg) bottom right no-repeat,
+        url(../img/rectangle13.svg) bottom right 140px no-repeat;
+}
+
+.mainTeamWrapper {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.teamVideo {
+    position: relative;
+    height: 107px;
+}
+
+.teamVideo img {
+    border-radius: 0 32px 32px 0;
+    transition: all .3s ease;
+}
+
+
+.teamVideo span {
+    width: 50px;
+    height: 50px;
+    transform: translate(87%, -100%);
+}
+
+.teamVideo span img {
+    width: 20px;
+    height: 20px;
+}
+
+.mainTeam {
+    border-radius: 32px;
+    overflow: hidden;
+    background: #2c2c2c;
+    height: 106px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.mainTeam:hover .teamVideo img {
+    transform: scale(1.1);
+}
+
+.mainTeamDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mainTeamName {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Unbounded", sans-serif;
+}
+
+.mainTeamJob {
+    font-size: 14px;
+}
+
+.ourProjects {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.ourProjectsT {
+    position: absolute;
+    top: 50%;
+    left: 70px;
+    transform: translate(0, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ourProjectsT div {
+    font-family: "Unbounded", sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.stMain {
+    width: 116px;
+    height: 116px;
+    position: absolute;
+    right: 15px;
+    top: 0;
 }
