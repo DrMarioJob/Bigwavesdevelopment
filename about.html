@@ -10,14 +10,105 @@
 	<main class="mainWrapper">
 		<header class="header">
 			<nav class="navigation">
-				
+				<div class="navLine">
+					<div class="navLine1">
+						<a href="#">Головна</a>
+						<a href="#">Про нас</a>
+						<a href="#">Проєкти</a>
+						<a href="#">Про Балі</a>
+						<a href="#">Партнерам</a>
+					</div>
+					<div class="navLine2">
+						<a href="#">Блог</a>
+						<a href="#">Поширені запитання</a>
+						<a href="#">Карєра</a>
+						<a href="#">Контакти</a>
+					</div>
+				</div>
+				<a href="/" class="logo"><img src="img/logo.svg" alt="Logo"></a>
 			</nav>
-			<div class="headDesc">
-				
+			<div class="container">
+				<div class="headDesc">
+					<div class="headDescT">
+						<div class="titleM">Про нас</div>
+						<div class="headDescTWr">
+							<p>Компанія Big Waves Development спеціалізується на створенні унікальних проєктів нерухомості на Балі та по всій Індонезії, пропонуючи вигідні інвестиційні можливості для досвідчених інвесторів.</p>
+							<p>Отримайте можливість стати власником найкращої нерухомості в «найкрасивішому і туристичному місці світу». Ми спеціалізуємося на придбанні найкращих земельних ділянок у популярних курортних зонах
+							острова Балі, що забезпечує високу рентабельність для отримання пасивного доходу. Ми будуємо вілли, апартаменти, готелі.</p>
+							<p>Big Waves Development — міжнародна команда спеціалістів з 13-річним досвідом роботи у будівництві: таунхауси, вілли, офісні корпоративні приміщення, апарт-комплекси.</p>
+						</div>
+						<a href="#" class="btn btn_grn">Консультація з менеджером</a>
+					</div>
+					<div class="headDescSlide">
+						<div class="item_slide active">
+							Slide 1
+						</div>
+						<div class="item_slide">
+							Slide 2
+						</div>
+						<div class="nav_slide">
+							<button type="button">Prev <span><-</span></button>
+							<div class="nav_dots">
+								<span class="active"></span>
+								<span></span>
+							</div>
+							<button type="button">Next <span>-></span></button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 	</main>
 	
 	<script src="js/main.js"></script>
+	<script>
+		class Slider {
+			constructor(containerSelector) {
+				this.container = document.querySelector(containerSelector);
+				this.slides = this.container.querySelectorAll('.item_slide');
+				this.prevButton = this.container.querySelector('.nav_slide button:first-child');
+				this.nextButton = this.container.querySelector('.nav_slide button:last-child');
+				this.dots = this.container.querySelectorAll('.nav_dots span');
+				this.currentIndex = 0;
+
+				this.init();
+			}
+
+			init() {
+				this.updateSlides();
+				this.prevButton.addEventListener('click', () => this.moveSlide(-1));
+				this.nextButton.addEventListener('click', () => this.moveSlide(1));
+				this.dots.forEach((dot, index) => {
+					dot.addEventListener('click', () => this.goToSlide(index));
+				});
+			}
+
+			moveSlide(direction) {
+				this.currentIndex = (this.currentIndex + direction + this.slides.length) % this.slides.length;
+				this.updateSlides();
+			}
+
+			goToSlide(index) {
+				this.currentIndex = index;
+				this.updateSlides();
+			}
+
+			updateSlides() {
+				this.slides.forEach((slide, index) => {
+					slide.classList.toggle('active', index === this.currentIndex);
+					slide.style.transition = 'transform 0.6s ease-in-out, opacity 0.6s';
+					slide.style.transform = `translateX(${(index - this.currentIndex) * 100}%)`;
+					slide.style.opacity = index === this.currentIndex ? '1' : '0';
+				});
+
+				this.dots.forEach((dot, index) => {
+					dot.classList.toggle('active', index === this.currentIndex);
+				});
+			}
+		}
+
+		// Usage
+		new Slider('.headDescSlide');
+	</script>
 </body>
 </html>
