@@ -1,0 +1,390 @@
+@media screen and (max-width: 980px) {
+    .mainWrapper {
+        width: auto;
+    }
+
+    .indoSlider .nav_slide {
+        display: flex;
+    }
+
+    .indoSlider .item_slide {
+        display: none;
+        width: -webkit-fill-available;
+        align-items: start;
+    }
+
+    .indoSlider .item_slide.active {
+        display: flex;
+    }
+
+    .indoRow {
+        flex-direction: column;
+    }
+
+    .containerWr {
+        width: auto;
+    }
+
+    .mobileHead {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid #757575;
+    }
+
+    .mobileHeadBtn {
+        width: 44px;
+        height: 44px;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        background: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobileHeadBtn span {
+        width: 60%;
+        height: 2px;
+        background: #000;
+        border-radius: 2px;
+        position: relative;
+        transition: all .3s ease;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: start;
+        background: #1E1E1E;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        height: 0;
+        width: -webkit-fill-available;
+        transition: height .3s linear;
+        overflow: hidden;
+        border-bottom: 0;
+        z-index: 100;
+    }
+
+    .navigation.active {
+        display: flex;
+        height: 100%;
+    }
+
+    .navLine1,
+    .navLine2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .mobileHeadBtn.active span:nth-child(2) {
+        display: none;
+    }
+
+    .mobileHeadBtn.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 3px;
+        left: 1px;
+    }
+
+    .mobileHeadBtn.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -3px;
+        left: 1px;
+    }
+
+    .container {
+        padding: 50px 20px;
+    }
+
+    .headDesc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        width: -webkit-fill-available;
+    }
+
+    .titleM {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .nav_slide button i {
+        display: none;
+    }
+
+    .item_slide2 {
+        display: none;
+    }
+
+    .headDesc {
+        gap: 35px;
+    }
+
+    .headColSum {
+        flex-direction: column;
+        text-align: left;
+        align-items: start;
+        gap: 35px;
+    }
+
+    .ourPhWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blockQo {
+        font-size: 14px;
+    }
+
+    .partHomeRow {
+        flex-direction: column;
+    }
+
+    .concretePlantNum {
+        flex-direction: column;
+    }
+
+    .formContRow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerRow {
+        flex-direction: column;
+    }
+
+    .concretePlantRow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .oneStatRow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .oneStatRow {
+        height: auto;
+    }
+
+    .oneStatColImgH {
+        height: auto;
+    }
+
+    .concretePlantNumCol {
+        width: -webkit-fill-available;
+    }
+
+    .mainTargetRow {
+        flex-direction: column;
+    }
+
+    .mainTargetCol {
+        width: -webkit-fill-available;
+    }
+
+    .mainTeamWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainTeamName {
+        font-size: 14px;
+    }
+
+    .mainTeamJob {
+        font-size: 12px;
+    }
+
+    .teamVideo img {
+        width: 107px;
+    }
+
+    .mainTeam {
+        height: auto;
+    }
+
+    .teamVideo span {
+        width: 34px;
+        height: 34px;
+    }
+
+    .teamVideo span img {
+        width: 13.6px;
+    }
+
+    .mainTargetCol {
+        min-height: auto;
+    }
+
+    .ourProjectsT div {
+        font-size: 14px;
+    }
+
+    .ourProjectsT {
+        position: relative;
+        transform: translate(0, 0);
+        top: 0px;
+        left: 0px;
+        margin-left: 20px;
+    }
+
+    .ourProjectsT div {
+        line-height: 18px;
+        width: 50%;
+    }
+
+    .ourVideo {
+        width: -webkit-fill-available;
+    }
+
+    .noBg {
+        display: none;
+    }
+
+    .ourProjects {
+        height: 252px;
+        background: url(../img/bgs.png) top left no-repeat;
+        background-size: cover;
+    }
+
+    .stMain {
+        width: 98px;
+        height: 98px;
+        position: absolute;
+        right: -3px;
+        top: 0;
+    }
+
+    .stMain {
+        border-radius: 100px;
+        background: #1f1f1f;
+        padding: 10px;
+    }
+
+    .partHomeRow {
+        gap: 45px;
+    }
+
+    .oneStatColOrd {
+        order: -1;
+    }
+
+    .oneStatColImgH {
+        display: none;
+    }
+
+    .oneStatRow {
+        border-radius: 0;
+        background: none;
+    }
+
+    .oneStatColSd {
+        height: 250px;
+        position: relative;
+    }
+
+    .oneStatColSd::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to top, rgba(30, 30, 30, 0.99), rgba(30, 30, 30, 0.01));
+    }
+
+    .concretePlantColPs {
+        background: url(../img/factoryImg.png.png) top center no-repeat;
+        border-radius: 15px;
+        padding: 80px 5px 20px 5px;
+    }
+
+    .concretePlantColPs img {
+        display: none;
+    }
+
+    .concretePlantColPs .blockQo {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+    .concretePlantColPs .blockQo {
+        line-height: 17px;
+        font-size: 13px;
+        padding: 10px 10px 10px 40px;
+        font-weight: 400;
+        border-radius: 10px;
+    }
+
+    .concretePlantRow .concretePlantCol:nth-child(2) {
+        order: -1;
+    }
+
+    .concretePlantNumColAr img {
+        transform: rotate(90deg);
+    }
+
+    .formContColPic .titleM {
+        position: relative;
+        top: 0;
+        left: 0;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .formBotText {
+        display: none;
+    }
+
+    .formContColPic img {
+        display: none;
+    }
+
+    .formContRow {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .formBotPic {
+        display: block;
+    }
+
+    .formBotPic img {
+        border-radius: 40px;
+        max-width: 100%;
+    }
+
+    .footerNavWr {
+        flex-direction: column;
+    }
+
+    .containerWr {
+        padding: 0 20px 0 20px;
+    }
+
+    .footerRow {
+        gap: 40px;
+    }
+
+    .footerRowMT {
+        text-align: center;
+        gap: 10px !important;
+    }
+
+}

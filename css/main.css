@@ -151,6 +151,12 @@ body {
     overflow: hidden;
 }
 
+.containerWr {
+    width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -187,6 +193,7 @@ body {
     font-size: 14px;
 }
 
+.footerNavWr div a:hover,
 .navLine a:hover,
 .logo:hover {
     opacity: 0.7;
@@ -195,6 +202,7 @@ body {
 
 .container {
     padding: 96px 0;
+    margin: 0 auto;
 }
 
 .btn {
@@ -208,6 +216,7 @@ body {
     border-radius: 40px;
     padding: 0 20px;
     font-size: 16px;
+    border: none;
 }
 
 .btn_grn:hover {
@@ -560,4 +569,482 @@ body {
     position: absolute;
     right: 15px;
     top: 0;
+}
+
+.indoRow {
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.indoCol {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #383838;
+    width: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.indoCard {
+    border-bottom: 1px solid #383838;
+    padding: 30px 0;
+}
+
+.indoCard:last-child {
+    border-bottom: none;
+}
+
+.indoCard p {
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+}
+
+.indoBtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: "Unbounded", sans-serif;
+}
+
+.indoMtitle {
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-family: "Unbounded", sans-serif;
+}
+
+.indoSlider .nav_slide {
+    display: none;
+}
+
+.indoSlider .item_slide {
+    align-items: start;
+}
+
+.partHomeRow {
+    margin-top: 48px;
+    display: flex;
+    gap: 20px;
+}
+
+.partHomeCol {
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+    align-items: center;
+    justify-content: center;
+}
+
+.partHomeCol img {
+    width: 200px;
+}
+
+.oneStatRow {
+    display: grid;
+    grid-template-columns: 316px 1fr;
+    justify-content: space-between;
+    gap: 50px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 40px;
+    background: url(../img/frame27350.png) bottom center no-repeat;
+}
+
+.concretePlantCol img,
+.oneStatRow img {
+    max-width: 100%;
+}
+
+.oneStatCol {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.oneStatColBtn {
+    display: flex;
+    gap: 20px;
+}
+
+.oneStatColImgH {
+    height: 218px;
+}
+
+.media:hover {
+    transform: scale(1.05);
+}
+
+.titleM2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titleM2 span {
+    font-weight: 400;
+    color: #757575;
+}
+
+.concretePlantRow {
+    margin: 48px 0;
+    display: grid;
+    grid-template-columns: 423px 1fr;
+    gap: 30px;
+}
+
+.concretePlantColPs {
+    position: relative;
+}
+
+.concretePlantColPs .blockQo {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    border-radius: 32px;
+    background: #1e1e1e;
+    padding: 20px;
+    padding-left: 40px;
+    border-left: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.concretePlantColPs .blockQo span {
+    width: 2px;
+    height: 60%;
+    background: #fff;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0, -50%);
+}
+
+.concretePlantColT {
+    font-size: 14px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    line-height: 24px;
+}
+
+.concretePlantColList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.concretePlantColList div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.concretePlantNumCol {
+    border-radius: 32px;
+    overflow: hidden;
+    background: #2c2c2c;
+    font-family: "Unbounded", sans-serif;
+    font-size: 15px;
+}
+
+.concretePlantNum {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.concretePlantNumCol {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 102px;
+    justify-content: center;
+    padding-left: 30px;
+    gap: 20px;
+    position: relative;
+}
+
+.concretePlantNum1 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.concretePlantNum2,
+.concretePlantNum1 {
+    position: relative;
+    z-index: 2;
+}
+
+.concretePlantNum3 {
+    font-weight: 600;
+    font-size: 128px;
+    color: #434343;
+    position: absolute;
+    right: 30px;
+    bottom: -37%;
+    z-index: 1;
+}
+
+.formContColPic img {
+    border-radius: 40px;
+}
+
+.formContColPic {
+    position: relative;
+}
+
+.formContColPic img {
+    max-width: 100%;
+}
+
+.formContColPic .titleM {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.formContRow {
+    display: grid;
+    grid-template-columns: 1fr 348px;
+}
+
+.formContColPh {
+    border-radius: 40px;
+    background: #fff;
+    color: #242424;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+}
+
+.formGroup input {
+    border-radius: 8px;
+    background: #f5f5f5;
+    padding-left: 15px;
+    height: 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #757575;
+}
+
+.formDesc {
+    line-height: 20px;
+    font-size: 14px;
+    color: #757575;
+}
+
+.formGroup label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.formGroupGp0 {
+    gap: 0;
+}
+
+.formContColPh .btn_grn {
+    width: -webkit-fill-available;
+}
+
+.formBotText {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Unbounded", sans-serif;
+}
+
+.footer {
+    padding: 30px 0;
+    background: #2c2c2c;
+}
+
+.footerNavT {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Unbounded", sans-serif;
+}
+
+.footerRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerNav,
+.footerCont,
+.footerContOff {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerNavWr {
+    display: flex;
+    gap: 30px;
+}
+
+.footerNavWr div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+.footerNavWr div a {
+    color: #fff;
+}
+
+.footerNavWrMin a {
+    font-size: 14px;
+    color: #757575 !important;
+}
+
+.footerContList {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footerContList div a {
+    color: #fff;
+}
+
+.footerContList div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footerContListMd img {
+    height: 21px;
+}
+
+.footerContListMd {
+    display: flex;
+    gap: 20px !important;
+}
+
+.footerContListMd a:hover {
+    opacity: 0.7;
+}
+
+.footerContOffT {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footerRowMT {
+    margin-top: 40px;
+}
+
+.footerTerms a {
+    text-decoration: underline;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footerContList div a:hover,
+.footerTerms a:hover {
+    color: #2EAFA3;
+}
+
+.footerCop {
+    color: #757575;
+}
+
+.footerContOff .btn {
+    width: -webkit-fill-available;
+}
+
+.formGroup input[type="radio"] {
+    display: none;
+}
+
+.formSpan {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background: #b2b2b2;
+    position: relative;
+}
+
+.formSpan::before {
+    content: "";
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 16px;
+    background: #f5f5f5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+}
+
+.formGroup input[type="radio"]:checked~.formSpan::before {
+    background: #1e1e1e;
+    width: 16px;
+    height: 16px;
+}
+
+.phoneSuggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    max-height: 200px;
+    overflow: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: #E7E7E7;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 10;
+}
+
+.phoneSuggestions div {
+    cursor: pointer;
+}
+
+.mobileHead {
+    display: none;
+}
+
+.nav_slide button i {
+    font-style: normal;
+}
+
+.formBotPic {
+    display: none;
+}
+
+.footerRowMT {
+    text-align: center;
+    gap: 10px !important;
 }
