@@ -12,6 +12,88 @@
 </head>
 
 <body>
+
+	<!-- Modal -->
+	<div class="modalWrapper hidden" id="modal1">
+		<button type="button" class="closeModalBtn">
+			<img src="img/close.svg" alt="Close">
+		</button>
+		<div class="modalRow">
+			<div class="modalCol modalColHd">
+				<img src="img/modal-pic.jpg" alt="Modal">
+			</div>
+			<div class="modalCol modalColPd">
+				<div class="titleM">Форма зв’язку</div>
+				<form action="/" method="get" id="bottomForm">
+					<div class="formModalWrapper">
+						<div class="formGroupGrid2">
+							<div class="formGroup">
+								<label for="">Ваше ім'я*</label>
+								<input type="text" name="formName" id="formName" placeholder="Name" required>
+							</div>
+							<div class="formGroup">
+								<label for="">Ваш телефон*</label>
+								<input type="text" name="formPhone" id="formPhone" placeholder="+000000000"
+									class="formPhone" required>
+								<div class="phoneSuggestions suggestions"></div>
+							</div>
+							<div class="formGroup">
+								<label for="">Ваш email</label>
+								<input type="text" name="formMail" id="formMail" placeholder="mail@mail.com">
+							</div>
+							<div class="formGroup">
+								<label for="">Ваш юзернейм</label>
+								<input type="text" name="formUserName" id="formUserName" placeholder="@username">
+							</div>
+						</div>
+						<div class="formGroupFlex2">
+							<div class="formGroup">
+								<label for="formTelegram">
+									<input type="radio" name="formMedia" id="formTelegram" value="Telegram">
+									<span class="formSpan"></span>
+									Telegram
+								</label>
+							</div>
+							<div class="formGroup">
+								<label for="formWhatsApp">
+									<input type="radio" name="formMedia" id="formWhatsApp" value="WhatsApp" checked>
+									<span class="formSpan"></span>
+									WhatsApp
+								</label>
+							</div>
+						</div>
+						<div class="formGroup">
+							<label for="">Оберіть зручний спосіб звʼязку</label>
+						</div>
+						<div class="formGroupFlex2">
+							<div class="formGroup">
+								<label for="formCallBack">
+									<input type="radio" name="formSelOpt" id="formCallBack" value="Передзвонити">
+									<span class="formSpan"></span>
+									Передзвонити
+								</label>
+							</div>
+							<div class="formGroup">
+								<label for="formWrite">
+									<input type="radio" name="formSelOpt" id="formWrite" value="Написати" checked>
+									<span class="formSpan"></span>
+									Написати
+								</label>
+							</div>
+						</div>
+						<button type="submit" id="formBtn" class="btn btn_grn">Залишити контакти</button>
+						<div class="formDesc">
+							Натискаючи кнопку, ви даєте згоду на обробку ваших особистих даних і погоджуєтеся з
+							нашою
+							політикою конфіденційності.
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+
 	<main class="mainWrapper">
 		<header class="header">
 			<!-- Mobile nav -->
@@ -58,7 +140,7 @@
 							<p>Big Waves Development — міжнародна команда спеціалістів з 13-річним досвідом роботи у
 								будівництві: таунхауси, вілли, офісні корпоративні приміщення, апарт-комплекси.</p>
 						</div>
-						<a href="#" class="btn btn_grn">Консультація з менеджером</a>
+						<span class="btn btn_grn showModal" data-target="#modal1">Консультація з менеджером</span>
 					</div>
 					<div class="headDescSlide">
 						<div class="item_slide active">
@@ -634,6 +716,37 @@
 			if (window.innerWidth < 980) {
 				new Slider('.indoSlider');
 			}
+		});
+	</script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			document.querySelectorAll('.showModal').forEach(button => {
+				button.addEventListener('click', () => {
+					const modalSelector = button.getAttribute('data-target');
+					const modal = document.querySelector(modalSelector);
+					if (modal) {
+						modal.classList.add('active');
+					}
+				});
+			});
+
+			document.querySelectorAll('.closeModalBtn').forEach(button => {
+				button.addEventListener('click', () => {
+					const modal = button.closest('.modalWrapper');
+					if (modal) {
+						modal.classList.remove('active');
+					}
+				});
+			});
+
+			document.querySelectorAll('.modalWrapper').forEach(modal => {
+				modal.addEventListener('click', (event) => {
+					if (event.target === modal) {
+						modal.classList.remove('active');
+					}
+				});
+			});
 		});
 	</script>
 </body>

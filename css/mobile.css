@@ -396,4 +396,49 @@
         padding-right: 60px;
     }
 
+    .modalColHd {
+        display: none;
+    }
+
+    .modalRow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modalWrapper {
+        width: 90%;
+    }
+
+    .formGroupGrid2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modalColPd {
+        padding: 25px;
+    }
+
+    .formGroupGrid2 {
+        gap: 20px 15px;
+    }
+
+    .contactsPageRow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactsPageCol {
+        width: -webkit-fill-available;
+    }
+
+    .contactsPageColAdr div {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .contactsPageAdr {
+        width: 75%;
+    }
+
 }

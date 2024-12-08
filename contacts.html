@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigwavesdevelopment</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modalWrapper hidden" id="modal1">
+        <button type="button" class="closeModalBtn">
+            <img src="img/close.svg" alt="Close">
+        </button>
+        <div class="modalRow">
+            <div class="modalCol modalColHd">
+                <img src="img/modal-pic.jpg" alt="Modal">
+            </div>
+            <div class="modalCol modalColPd">
+                <div class="titleM">Форма зв’язку</div>
+                <form action="/" method="get" id="bottomForm">
+                    <div class="formModalWrapper">
+                        <div class="formGroupGrid2">
+                            <div class="formGroup">
+                                <label for="">Ваше ім'я*</label>
+                                <input type="text" name="formName" id="formName" placeholder="Name" required>
+                            </div>
+                            <div class="formGroup">
+                                <label for="">Ваш телефон*</label>
+                                <input type="text" name="formPhone" id="formPhone" placeholder="+000000000"
+                                    class="formPhone" required>
+                                <div class="phoneSuggestions suggestions"></div>
+                            </div>
+                            <div class="formGroup">
+                                <label for="">Ваш email</label>
+                                <input type="text" name="formMail" id="formMail" placeholder="mail@mail.com">
+                            </div>
+                            <div class="formGroup">
+                                <label for="">Ваш юзернейм</label>
+                                <input type="text" name="formUserName" id="formUserName" placeholder="@username">
+                            </div>
+                        </div>
+                        <div class="formGroupFlex2">
+                            <div class="formGroup">
+                                <label for="formTelegram">
+                                    <input type="radio" name="formMedia" id="formTelegram" value="Telegram">
+                                    <span class="formSpan"></span>
+                                    Telegram
+                                </label>
+                            </div>
+                            <div class="formGroup">
+                                <label for="formWhatsApp">
+                                    <input type="radio" name="formMedia" id="formWhatsApp" value="WhatsApp" checked>
+                                    <span class="formSpan"></span>
+                                    WhatsApp
+                                </label>
+                            </div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="">Оберіть зручний спосіб звʼязку</label>
+                        </div>
+                        <div class="formGroupFlex2">
+                            <div class="formGroup">
+                                <label for="formCallBack">
+                                    <input type="radio" name="formSelOpt" id="formCallBack" value="Передзвонити">
+                                    <span class="formSpan"></span>
+                                    Передзвонити
+                                </label>
+                            </div>
+                            <div class="formGroup">
+                                <label for="formWrite">
+                                    <input type="radio" name="formSelOpt" id="formWrite" value="Написати" checked>
+                                    <span class="formSpan"></span>
+                                    Написати
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" id="formBtn" class="btn btn_grn">Залишити контакти</button>
+                        <div class="formDesc">
+                            Натискаючи кнопку, ви даєте згоду на обробку ваших особистих даних і погоджуєтеся з
+                            нашою
+                            політикою конфіденційності.
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <main class="mainWrapper">
+        <header class="header">
+            <!-- Mobile nav -->
+            <div class="mobileHead">
+                <a href="/"><img src="img/logo-m.svg" alt="Logo"></a>
+                <button type="button" class="mobileHeadBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <!-- Mobile nav -->
+            <nav class="navigation">
+                <div class="navLine">
+                    <div class="navLine1">
+                        <a href="#">Головна</a>
+                        <a href="#">Про нас</a>
+                        <a href="#">Проєкти</a>
+                        <a href="#">Про Балі</a>
+                        <a href="#">Партнерам</a>
+                    </div>
+                    <div class="navLine2">
+                        <a href="#">Блог</a>
+                        <a href="#">Поширені запитання</a>
+                        <a href="#">Карєра</a>
+                        <a href="#">Контакти</a>
+                    </div>
+                </div>
+                <a href="/" class="logo"><img src="img/logo.svg" alt="Logo"></a>
+            </nav>
+        </header>
+
+        <section class="sec secContactsPage">
+            <div class="container">
+                <div class="contactsPageRow">
+                    <div class="contactsPageCol contactsPageColWg">
+                        <div class="titleM">Контакти</div>
+                        <div class="footerContList">
+                            <div><img src="img/phone-cont.svg" alt="Cont"><a href="https://wa.me/+6285190128083"
+                                    target="_blank">+6285190128083</a>
+                            </div>
+                            <div><img src="img/cont-2.svg" alt="Cont"><a href="https://t.me/roman_bigwaves"
+                                    target="_blank">@roman_bigwaves</a>
+                            </div>
+                            <div class="footerContListMd">
+                                <a href="#"><img src="img/instagram.svg" alt="Insta"></a>
+                                <a href="#"><img src="img/whatsapp-b.svg.svg" alt="Insta"></a>
+                                <a href="#"><img src="img/YouTube.svg" alt="Insta"></a>
+                            </div>
+                        </div>
+                        <span class="btn btn_grn showModal" data-target="#modal1">Зв’язатись</span>
+                    </div>
+                    <div class="contactsPageCol">
+                        <div class="contactsPageAdr">
+                            <div class="contactsPageColPic">
+                                <img src="img/map-pin.svg" alt="Pin">
+                            </div>
+                            <div class="contactsPageColAdr">
+                                <span>Адреса:</span>
+                                <div>Munggu, Mengwi, Бадунг, Бали, Индонезия</div>
+                            </div>
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.3239412797275!2d115.14201647676076!3d-8.660709688131751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd247693fa7868f%3A0x1acc81586b7417a3!2sBIG%20WAVES%20DEVELOPMENT%20Office!5e0!3m2!1sru!2sua!4v1733657409635!5m2!1sru!2sua"
+                            width="100%" height="510" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="footer">
+        <div class="containerWr">
+            <div class="footerRow">
+                <div class="footerCol">
+                    <div class="footerNav">
+                        <div class="footerNavT">Карта сайту</div>
+                        <div class="footerNavWr">
+                            <div>
+                                <a href="#">Головна</a>
+                                <a href="#">Про нас</a>
+                                <a href="#">Проєкти</a>
+                                <a href="#">Про Балі</a>
+                                <a href="#">Партнерам</a>
+                            </div>
+                            <div class="footerNavWrMin">
+                                <a href="#">Блог</a>
+                                <a href="#">Поширені запитання</a>
+                                <a href="#">Карєра</a>
+                                <a href="#">Контакти</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerCol">
+                    <div class="footerCont">
+                        <div class="footerNavT">Контакти</div>
+                        <div class="footerContList">
+                            <div><img src="img/cont-1.svg" alt="Cont"><a href="https://wa.me/+6285190128083"
+                                    target="_blank">+6285190128083</a></div>
+                            <div><img src="img/cont-2.svg" alt="Cont"><a href="https://t.me/roman_bigwaves"
+                                    target="_blank">@roman_bigwaves</a></div>
+                            <div class="footerContListMd">
+                                <a href="#"><img src="img/instagram.svg" alt="Insta"></a>
+                                <a href="#"><img src="img/whatsapp-b.svg.svg" alt="Insta"></a>
+                                <a href="#"><img src="img/YouTube.svg" alt="Insta"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerCol">
+                    <div class="footerContOff">
+                        <div class="footerNavT">Офіс</div>
+                        <a href="/" class="logo"><img src="img/logo.svg" alt="Logo"></a>
+                        <div class="footerContOffT">
+                            Ми будемо раді зустрітися з вами<br>в нашому офісі у Чангу, Балі!
+                        </div>
+                        <a href="#" class="btn btn_grn">Відвідати офіс</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footerRow footerRowMT">
+                <div class="footerTerms"><a href="#">Політика конфіденційності</a></div>
+                <div class="footerCop">© BIG WAVES DEVELOPMENT 2025</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/selectCountry.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.showModal').forEach(button => {
+                button.addEventListener('click', () => {
+                    const modalSelector = button.getAttribute('data-target');
+                    const modal = document.querySelector(modalSelector);
+                    if (modal) {
+                        modal.classList.add('active');
+                    }
+                });
+            });
+
+            document.querySelectorAll('.closeModalBtn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const modal = button.closest('.modalWrapper');
+                    if (modal) {
+                        modal.classList.remove('active');
+                    }
+                });
+            });
+
+            document.querySelectorAll('.modalWrapper').forEach(modal => {
+                modal.addEventListener('click', (event) => {
+                    if (event.target === modal) {
+                        modal.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
