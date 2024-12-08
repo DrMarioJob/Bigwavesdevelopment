@@ -1044,7 +1044,77 @@ body {
     display: none;
 }
 
-.footerRowMT {
-    text-align: center;
-    gap: 10px !important;
+/** Faq **/
+
+.faqWrapper {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faqRow {
+    background: #2c2c2c;
+    border-radius: 32px;
+    font-size: 14px;
+    min-height: 68px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.faqColBtn {
+    background: #2c2c2c;
+    border-radius: 32px;
+    font-size: 14px;
+    min-height: 68px;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    font-family: "Unbounded", sans-serif;
+}
+
+.faqColBtn.active,
+.faqRow.active {
+    background: #434343;
+}
+
+.faqColShow {
+    display: none;
+    padding: 0 20px 20px 20px;
+    color: #b3b3b3;
+}
+
+.faqColShow.active {
+    display: flex;
+}
+
+.faqColBtn {
+    cursor: pointer;
+}
+
+.faqColBtn span {
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    border: 1px solid #757575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/arrow-faq1.svg) center no-repeat #242424;
+    transition: background .3s ease;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.faqColBtn.active span {
+    background: url(../img/arrow-faq2.svg) center no-repeat #fff;
+    border-color: #fff;
 }
