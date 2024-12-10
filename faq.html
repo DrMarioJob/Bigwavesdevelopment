@@ -336,13 +336,17 @@
 
             buttons.forEach((button, index) => {
                 button.addEventListener('click', () => {
+                    const isActive = button.classList.contains('active');
+
                     buttons.forEach(btn => btn.classList.remove('active'));
                     contents.forEach(content => content.classList.remove('active'));
                     contents2.forEach(content => content.classList.remove('active'));
 
-                    button.classList.add('active');
-                    contents[index].classList.add('active');
-                    contents2[index].classList.add('active');
+                    if (!isActive) {
+                        button.classList.add('active');
+                        contents[index].classList.add('active');
+                        contents2[index].classList.add('active');
+                    }
                 });
             });
         });

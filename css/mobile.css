@@ -499,4 +499,8 @@
         font-size: 32px;
     }
 
+    .topNewsPic img {
+        width: fit-content;
+    }
+
 }
