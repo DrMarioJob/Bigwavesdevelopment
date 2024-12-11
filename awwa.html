@@ -23,7 +23,8 @@
             </div>
             <div class="modalCol modalColPd">
                 <div class="titleM">Форма зв’язку</div>
-                <form action="/" method="get" id="bottomForm">
+                <form action="" method="get" id="bottomForm">
+                    <input type="hidden" id="formSource" name="formSource">
                     <div class="formModalWrapper">
                         <div class="formGroupGrid2">
                             <div class="formGroup">
@@ -150,7 +151,8 @@
                         біля басейну дозволять
                         насолоджуватися безпечною та розкішною життям.
                     </div>
-                    <span class="btn btn_wt showModal" data-target="#modal1">Зв'яжіться з нами</span>
+                    <span class="btn btn_wt showModal" data-source="awwa-page-header-contact"
+                        data-target="#modal1">Зв'яжіться з нами</span>
                 </div>
                 <div class="headAwCol headAwCol2">
                     <div class="headAwCol2Name">
@@ -185,7 +187,8 @@
 
     <section class="sec secPhotoGal">
         <div class="container containerWr">
-            <h3 class="titleM titleMFl">Фото готелю <span class="btn btn_grn showModal" data-target="#modal1">Обрати
+            <h3 class="titleM titleMFl">Фото готелю <span class="btn btn_grn showModal"
+                    data-source="awwa-page-select-unit" data-target="#modal1">Обрати
                     юніт</span>
             </h3>
             <div class="photoGalWrapper">
@@ -388,7 +391,8 @@
                 <div class="plansPriceCol">
                     <div class="plansPriceCol2">
                         <b>$135 000</b>
-                        <span class="btn btn_grn showModal" data-target="#modal1">Отримати консультацію</span>
+                        <span class="btn btn_grn showModal" data-source="awwa-page-get-consultation"
+                            data-target="#modal1">Отримати консультацію</span>
                     </div>
                 </div>
                 <div class="plansPriceCol3">
@@ -453,7 +457,8 @@
                             </div>
                         </div>
                     </div>
-                    <span class="btn btn_wt showModal" data-target="#modal1">Отримати доступ</span>
+                    <span class="btn btn_wt showModal" data-source="awwa-page-get-ribas" data-target="#modal1">Отримати
+                        доступ</span>
                 </div>
             </div>
         </div>
@@ -468,7 +473,8 @@
                     <b>
                         Gg. Semar No.3, Kerobokan, Kec. Kuta Utara, Kabupaten Badung, Bali, Індонезія
                     </b>
-                    <span class="btn btn_grn showModal" data-target="#modal1">Відвідати офіс</span>
+                    <span class="btn btn_grn showModal" data-source="awwa-page-map-visit-office"
+                        data-target="#modal1">Відвідати офіс</span>
                 </div>
                 <div class="awwaMapCol">
                     <img src="img/awwa-map.png" alt="Map">
@@ -521,7 +527,8 @@
                     тут, щоб зробити процес максимально
                     зручним і гнучким.
                 </div>
-                <span class="btn btn_grn showModal" data-target="#modal1">Отримати консультацію</span>
+                <span class="btn btn_grn showModal" data-source="awwa-page-payment-options-consultation"
+                    data-target="#modal1">Отримати консультацію</span>
             </div>
         </div>
     </section>
@@ -590,7 +597,8 @@
                             Ми будемо раді зустрітися з вами<br>в нашому офісі у Чангу, Балі!
                         </div>
                         <!-- <a href="#" class="btn btn_grn">Відвідати офіс</a> -->
-                        <span class="btn btn_grn showModal" data-target="#modal1">Відвідати офіс</span>
+                        <span class="btn btn_grn showModal" data-source="awwa-page-footer"
+                            data-target="#modal1">Відвідати офіс</span>
                     </div>
                 </div>
             </div>
@@ -604,6 +612,7 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/selectCountry.js"></script>
     <script src="js/fancyBox-3.0.47.js"></script>
+    <script src="js/modal-target.js"></script>
     <script src="js/main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {

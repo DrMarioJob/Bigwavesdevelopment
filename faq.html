@@ -24,7 +24,8 @@
             </div>
             <div class="modalCol modalColPd">
                 <div class="titleM">Форма зв’язку</div>
-                <form action="/" method="get" id="bottomForm">
+                <form action="" method="get" id="bottomForm">
+                    <input type="hidden" id="formSource" name="formSource">
                     <div class="formModalWrapper">
                         <div class="formGroupGrid2">
                             <div class="formGroup">
@@ -259,7 +260,8 @@
                     <div class="ourProjectsT">
                         <div>Дізнайтесь більше про наші<br>проекти та інвестиційні можливості</div>
                         <!-- <a href="#" class="btn btn_grn">Отримати консультацію</a> -->
-                        <span class="btn btn_grn showModal" data-target="#modal1">Отримати консультацію</span>
+                        <span class="btn btn_grn showModal" data-source="faq-page-сonsultation"
+                            data-target="#modal1">Отримати консультацію</span>
                     </div>
                     <img src="img/exclude.png" class="noBg" alt="Bg">
                     <img src="img/st.svg" class="stMain" alt="St">
@@ -314,7 +316,8 @@
                             Ми будемо раді зустрітися з вами<br>в нашому офісі у Чангу, Балі!
                         </div>
                         <!-- <a href="#" class="btn btn_grn">Відвідати офіс</a> -->
-                        <span class="btn btn_grn showModal" data-target="#modal1">Відвідати офіс</span>
+                        <span class="btn btn_grn showModal" data-source="faq-page-footer"
+                            data-target="#modal1">Відвідати офіс</span>
                     </div>
                 </div>
             </div>
@@ -327,6 +330,7 @@
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/selectCountry.js"></script>
+    <script src="js/modal-target.js"></script>
     <script src="js/main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {

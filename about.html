@@ -24,7 +24,8 @@
 			</div>
 			<div class="modalCol modalColPd">
 				<div class="titleM">Форма зв’язку</div>
-				<form action="/" method="get" id="bottomForm">
+				<form action="" method="get" id="bottomForm">
+					<input type="hidden" id="formSource" name="formSource">
 					<div class="formModalWrapper">
 						<div class="formGroupGrid2">
 							<div class="formGroup">
@@ -140,7 +141,8 @@
 							<p>Big Waves Development — міжнародна команда спеціалістів з 13-річним досвідом роботи у
 								будівництві: таунхауси, вілли, офісні корпоративні приміщення, апарт-комплекси.</p>
 						</div>
-						<span class="btn btn_grn showModal" data-target="#modal1">Консультація з менеджером</span>
+						<span class="btn btn_grn showModal" data-source="about-page-header"
+							data-target="#modal1">Консультація з менеджером</span>
 					</div>
 					<div class="headDescSlide">
 						<div class="item_slide active">
@@ -320,7 +322,8 @@
 				<div class="ourProjects">
 					<div class="ourProjectsT">
 						<div>Дізнайтесь більше про наші<br>проекти та інвестиційні можливості</div>
-						<span class="btn btn_grn showModal" data-target="#modal1">Отримати консультацію</span>
+						<span class="btn btn_grn showModal" data-source="about-page-сonsultation"
+							data-target="#modal1">Отримати консультацію</span>
 					</div>
 					<img src="img/exclude.png" class="noBg" alt="Bg">
 					<img src="img/st.svg" class="stMain" alt="St">
@@ -445,7 +448,9 @@
 							Будь першим, хто дізнається про останні новини ринку нерухомості на Балі
 						</div>
 						<div class="oneStatColBtn">
-							<a href="#" class="btn btn_grn">Стежте за нами</a>
+							<!-- <a href="#" class="btn btn_grn">Стежте за нами</a> -->
+							<span class="btn btn_grn showModal" data-source="about-page-follow-us"
+								data-target="#modal1">Стежте за нами</span>
 							<a href="#" class="media"><img src="img/instagram.svg" alt="Insta"></a>
 						</div>
 					</div>
@@ -533,7 +538,8 @@
 							<img src="img/frame273469.jpg" alt="Pic">
 						</div>
 					</div>
-					<form action="/" method="get" id="bottomForm">
+					<form action="" method="get" id="bottomForm">
+						<input type="hidden" id="formSource" name="formSource" value="about-page-special-bonus">
 						<div class="formContCol formContColPh">
 							<div class="formGroup">
 								<label for="">Ваше ім'я*</label>
@@ -649,7 +655,9 @@
 							Ми будемо раді зустрітися з вами<br>в нашому офісі у Чангу, Балі!
 						</div>
 						<!-- <a href="#" class="btn btn_grn">Відвідати офіс</a> -->
-						<span class="btn btn_grn showModal" data-target="#modal1">Відвідати офіс</span>
+						<span class="btn btn_grn showModal" data-source="about-page-footer" data-source="about_header"
+							data-target="#modal1">Відвідати
+							офіс</span>
 					</div>
 				</div>
 			</div>
@@ -663,6 +671,7 @@
 	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/fancyBox-3.0.47.js"></script>
 	<script src="js/selectCountry.js"></script>
+	<script src="js/modal-target.js"></script>
 	<script src="js/main.js"></script>
 	<script>
 		class Slider {
