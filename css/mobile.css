@@ -503,4 +503,8 @@
         width: fit-content;
     }
 
+    .koketitSlide .nav_slide {
+        display: flex;
+    }
+
 }
