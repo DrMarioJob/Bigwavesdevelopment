@@ -2075,3 +2075,336 @@ button {
     justify-content: center;
     text-align: center;
 }
+
+.investMainRow {
+    display: flex;
+    gap: 43px;
+    margin-top: 48px;
+}
+
+.investMainCol {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    width: -webkit-fill-available;
+}
+
+.investMainColListArrow {
+    text-align: center;
+}
+
+.investMainColTitle {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2EAFA3;
+    text-align: left;
+    align-items: start;
+}
+
+.investMainColList {
+    border-radius: 32px;
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.investMainColList.active {
+    border-color: #14AE5C;
+}
+
+.investMainColList.active .investMainColListD span {
+    color: #14AE5C;
+}
+
+.investMainColListT {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.investMainColListD {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.investMainColListN {
+    color: #343434;
+    font-size: 140px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+}
+
+.investMainColListT span {
+    line-height: 140%;
+}
+
+.calculatInvesRow {
+    margin-top: 48px;
+}
+
+.calculatInvesTableHead {
+    border-radius: 24px 24px 0 0;
+    background: #2c2c2c;
+
+}
+
+.calculatInvesTableRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 91px;
+}
+
+.calculatInvesTableCol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.calculatInvesTableCol5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calculatInvesTableCol3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.calculatInvesTableCol1,
+.calculatInvesTableCol2,
+.calculatInvesTableCol4 {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.calculatInvesTableCol6 {
+    display: flex;
+    gap: 50px;
+}
+
+.calculatInvesTableCol5 div {
+    background: #434343;
+    font-size: 16px;
+    padding: 10px 25px 10px 0;
+    font-size: 20px;
+    min-width: 133px;
+    text-align: right;
+}
+
+.calculatInvesTableCol1 {
+    padding-left: 20px;
+}
+
+.calculatInvesTableList {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    font-size: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #383838;
+}
+
+.calculatInvesTableList.active {
+    color: #2EAFA3;
+    font-weight: 800;
+    border-color: #2EAFA3;
+}
+
+.calculatInvesTableList2 div.active {
+    color: #2EAFA3;
+    font-weight: 800;
+    width: 200px;
+    text-align: left;
+}
+
+.calculatInvesTableList2 {
+    display: flex;
+    gap: 100px;
+}
+
+.calculatInvesTableRow2 .calculatInvesTableList2 {
+    gap: 60px;
+}
+
+.calculatInvesTableList2 div {
+    min-width: 100px;
+    text-align: right;
+}
+
+.calculatInvesTableCol7 {
+    display: flex;
+    gap: 100px;
+    padding-right: 25px;
+}
+
+.awwaNewsRow {
+    margin-top: 48px;
+}
+
+.ourProjectsRow {
+    margin-top: 48px;
+    display: flex;
+    gap: 43px;
+}
+
+.ourProjectsCol {
+    border-radius: 40px;
+    overflow: hidden;
+    border: 2px solid #383838;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: -webkit-fill-available;
+}
+
+.ourProjectsColCarousel {
+    min-height: 340px;
+    border-radius: 40px;
+    overflow: hidden;
+    border-bottom: 2px solid #383838;
+    position: relative;
+}
+
+.ourProjectsColCarousel::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.01));
+}
+
+.ourProjectsColCarouselDots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    display: flex;
+    gap: 5px;
+    width: -webkit-fill-available;
+    z-index: 3;
+}
+
+.ourProjectsColCarouselDots div {
+    border-radius: 8px;
+    overflow: hidden;
+    background: #383838;
+    min-height: 60px;
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease;
+    opacity: 0.5;
+}
+
+.ourProjectsColCarouselDots div img {
+    max-width: 100%;
+}
+
+.ourProjectsColCarouselDots div.active {
+    opacity: 1;
+    box-shadow: 0 0 0 2px #2EAFA3;
+}
+
+.ourProjectsColCarouselDots div:first-child {
+    border-top-left-radius: 30px;
+}
+
+.ourProjectsColCarouselDots div:last-child {
+    border-top-right-radius: 30px;
+}
+
+.ourProjectsColCarouselSlide {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.ourProjectsColCarouselSlide.active {
+    display: flex;
+}
+
+.ourProjectsColCarousel .nav_slide {
+    display: none;
+}
+
+.ourProjectsColInfoWr {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ourProjectsColInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ourProjectsColInfo1 {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.ourProjectsColInfo2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ourProjectsColInfo2 div:first-child {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.ourProjectsColInfo2 div:last-child {
+    font-size: 12px;
+    color: #f5f5f5;
+}
+
+.ourProjectsColText {
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.ourProjectsColInfoWr .btn {
+    width: -webkit-fill-available;
+}
+
+.projectsCheck {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    border-radius: 8px;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
