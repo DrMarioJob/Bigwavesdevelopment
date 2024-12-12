@@ -507,4 +507,397 @@
         display: flex;
     }
 
+    .container2 {
+        width: auto;
+    }
+
+    .headAwCol1 {
+        order: 1;
+    }
+
+    .headAwCol2 {
+        flex-direction: column;
+    }
+
+    .headPrWrapper::before {
+        display: none;
+    }
+
+    .secHeadInfo2 {
+        margin-top: -40px;
+    }
+
+    .headAwCol2Name {
+        display: none !important;
+    }
+
+    .headAwRow {
+        border: 1px solid #303030;
+        padding: 20px 10px;
+        background: #1E1E1E;
+        border-radius: 30px;
+    }
+
+    .headPrWrapper::after {
+        display: none;
+    }
+
+    .headAwCol1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headAwCol1 div {
+        font-size: 12px;
+    }
+
+    .secHeadInfo2Title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        font-family: "Unbounded", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .headPrWrapper {
+        overflow: hidden;
+        border-radius: 40px;
+
+    }
+
+    .prHeader {
+        max-width: 200%;
+    }
+
+    .secAwwa {
+        padding: 0 20px;
+    }
+
+    .headPrLogo img {
+        top: 20px;
+        left: 50%;
+        width: 86px;
+        transform: translate(-50%, 0);
+    }
+
+    .headPrBq {
+        top: inherit;
+        left: 50%;
+        bottom: 55px;
+        font-size: 10px;
+        width: 80%;
+        transform: translate(-50%, 0);
+    }
+
+    .secPhotoGal {
+        margin: 60px 0px;
+    }
+
+    .titleMFl {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .photoGalWrapperTab {
+        flex-direction: column;
+    }
+
+    .mSlide img {
+        max-width: 100%;
+    }
+
+    .awwaSlideWrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .awwaSlideDots {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .koketitRow {
+        grid-template-columns: 1fr;
+    }
+
+    .koketitRow2 {
+        gap: 5px;
+        margin: 22px 0 22px 0;
+    }
+
+    .slideScale {
+        background: none;
+    }
+
+    .koketitSlideWr .item_slide {
+        border-radius: 40px;
+    }
+
+    .koketitSlide .blockQo {
+        margin-top: 32px;
+        font-size: 12px;
+        line-height: 120%;
+    }
+
+    .btnPc {
+        display: none;
+    }
+
+    .btnPc2 {
+        display: flex;
+    }
+
+    .photoGalWrapper .btn {
+        margin-top: 32px;
+    }
+
+    .secPlansPrice {
+        margin-top: 100px;
+    }
+
+    .secKoketit {
+        margin-bottom: 60px;
+    }
+
+    .headAwCol2 {
+        gap: 32px;
+    }
+
+    .plansPriceRow {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .plansPriceColVar {
+        font-size: 10px;
+    }
+
+    .plansPriceCol2 b {
+        font-size: 32px;
+    }
+
+    .plansPriceRow .btn {
+        margin-top: 20px;
+    }
+
+    .ribasRow {
+        grid-template-columns: 1fr;
+    }
+
+    .secRibas {
+        margin-top: 100px;
+    }
+
+    .ribasCol2 {
+        order: -1;
+    }
+
+    .ribasRow {
+        background: none;
+        padding: 0;
+        border-radius: 0;
+        overflow: inherit;
+    }
+
+    .ribasCol5 .btn {
+        margin-top: -70px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .ribasCol .titleM {
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .ribasColListWr {
+        flex-direction: column;
+    }
+
+    .secAwwaMap {
+        margin-top: 100px;
+    }
+
+    .awwaMapRow {
+        grid-template-columns: 1fr;
+    }
+
+    .awwaMapCol34 {
+        margin-bottom: 20px;
+    }
+
+    .secSelPayment {
+        margin-top: 100px;
+    }
+
+    .selPaymentRow {
+        flex-direction: column;
+    }
+
+    .selPaymentBq {
+        flex-direction: column;
+    }
+
+    .sec3Dmodel {
+        margin: 100px 0;
+    }
+
+    .sec3Dmodel img {
+        max-width: 100%;
+    }
+
+    .photoGalWrapperBtnPc {
+        display: flex;
+    }
+
+    .photoGalWrapperBtnPc {
+        margin-top: 32px;
+    }
+
+    .investMainColTitle {
+        display: none;
+    }
+
+    .investMainRow {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .investMainColListN {
+        font-size: 118px;
+    }
+
+    .secCalculatInves {
+        margin-top: 100px;
+    }
+
+    .calculatInvesTableCol1,
+    .calculatInvesTableCol2,
+    .calculatInvesTableCol4 {
+        font-size: 14px;
+    }
+
+    .calculatInvesTableList {
+        font-size: 12px;
+    }
+
+    .calculatInvesTableCol6 {
+        gap: 10px;
+    }
+
+    .calculatInvesTableCol5 div {
+        width: auto;
+        min-width: auto;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .calculatInvesTableRow2 .calculatInvesTableList2 {
+        gap: 25px;
+    }
+
+    .calculatInvesTableList2 div {
+        min-width: auto;
+    }
+
+    .calculatInvesTableList2 div {
+        text-wrap: nowrap;
+    }
+
+    .calculatInvesTableList {
+        padding: 15px;
+    }
+
+    .calculatInvesTableList {
+        gap: 35px;
+    }
+
+    .calculatInvesTableCol5 div {
+        padding: 10px;
+    }
+
+    .calculatInvesTableCol7 {
+        gap: 15px;
+    }
+
+    .calculatInvesTableRow {
+        gap: 15px;
+    }
+
+    .calculatInvesTableList2 div.active {
+        width: auto;
+    }
+
+    .secAwwaNews {
+        margin-top: 100px;
+    }
+
+    .secOurProjects {
+        margin-top: 100px;
+    }
+
+    .secAwwaNews .topNews {
+        display: none;
+    }
+
+    .secAwwaNews .topNews.active {
+        display: flex;
+    }
+
+    .secAwwaNews .topNewsPic img {
+        margin: 0;
+    }
+
+    .secAwwaNews .nav_slide {
+        display: flex;
+    }
+
+    .tabRow2 {
+        display: none;
+    }
+
+    .tabRow2.active {
+        display: flex;
+    }
+
+    .ourProjectsRow {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .ourProjectsColCarousel {
+        min-height: auto;
+    }
+
+    .ourProjectsCol {
+        display: none;
+    }
+
+    .ourProjectsCol.active {
+        display: flex;
+    }
+
+    .ourProjectsColCarouselDots div {
+        min-height: auto;
+    }
+
+    .ourProjectsColCarouselDots {
+        height: auto;
+    }
+
+    .ourProjectsColInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .ourProjectsColInfo1 {
+        font-size: 24px;
+    }
+
+    .secOurProjects100 {
+        margin-bottom: 100px;
+    }
+
 }

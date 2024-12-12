@@ -4,22 +4,23 @@ document.querySelector('.mobileHeadBtn').addEventListener('click', () => {
     document.querySelector('.mobileHeadBtn').classList.toggle('active');
 });
 
+// Section scroll
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('.sec'); // Все блоки с классом .sec
+    const sections = document.querySelectorAll('.sec');
 
     const handleScroll = () => {
-        const triggerBottom = window.innerHeight / 1.2; // Точка срабатывания
+        const triggerBottom = window.innerHeight / 1.2;
 
         sections.forEach((section) => {
             const sectionTop = section.getBoundingClientRect().top;
 
             if (sectionTop < triggerBottom) {
-                section.classList.add('visible'); // Добавляем класс видимости
+                section.classList.add('visible');
             }
         });
     };
 
-    window.addEventListener('scroll', handleScroll); // Слушаем прокрутку
+    window.addEventListener('scroll', handleScroll);
 
-    handleScroll(); // Проверяем начальное положение
+    handleScroll();
 });

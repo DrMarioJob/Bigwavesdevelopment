@@ -128,6 +128,7 @@
 
     <section class="sec secAwwa">
         <div class="container2">
+            <div class="secHeadInfo2Title">AWWA hotel</div>
             <div class="headPrWrapper">
                 <div class="headPrBq">
                     <img src="img/listBq.svg" alt="Ico">
@@ -187,7 +188,7 @@
 
     <section class="sec secPhotoGal">
         <div class="container containerWr">
-            <h3 class="titleM titleMFl">Фото готелю <span class="btn btn_grn showModal"
+            <h3 class="titleM titleMFl">Фото готелю <span class="btn btn_grn btnPc showModal"
                     data-source="awwa-page-select-unit" data-target="#modal1">Обрати
                     юніт</span>
             </h3>
@@ -236,6 +237,9 @@
                             </div>
                             <button type="button"><span><img src="img/Icon-right.svg" alt="Arrow"></span></button>
                         </div>
+                        <span class="btn btn_grn btnPc2 showModal" data-source="awwa-page-select-unit"
+                            data-target="#modal1">Обрати
+                            юніт</span>
                     </div>
                 </div>
                 <div class="photoGalWrapperTab tabRow">
@@ -391,7 +395,7 @@
                 <div class="plansPriceCol">
                     <div class="plansPriceCol2">
                         <b>$135 000</b>
-                        <span class="btn btn_grn showModal" data-source="awwa-page-get-consultation"
+                        <span class="btn btn_grn btnPc showModal" data-source="awwa-page-get-consultation"
                             data-target="#modal1">Отримати консультацію</span>
                     </div>
                 </div>
@@ -417,6 +421,9 @@
                         </div>
                     </div>
                 </div>
+                <span class="btn btn_grn btnPc2 showModal" data-source="awwa-page-get-consultation"
+                    data-target="#modal1">Отримати
+                    консультацію</span>
             </div>
         </div>
     </section>
@@ -424,10 +431,13 @@
     <section class="sec secRibas">
         <div class="container containerWr">
             <div class="ribasRow">
-                <div class="ribasCol">
+                <div class="ribasCol ribasCol5">
                     <img src="img/phone2.png" class="ribasPhone" alt="Ribas">
+                    <span class="btn btn_wt btnPc2 showModal" data-source="awwa-page-get-ribas"
+                        data-target="#modal1">Отримати
+                        доступ</span>
                 </div>
-                <div class="ribasCol">
+                <div class="ribasCol ribasCol2">
                     <h3 class="titleM">
                         Слідкуйте за своїми<br>
                         апартаментами в додатку<br>
@@ -457,7 +467,8 @@
                             </div>
                         </div>
                     </div>
-                    <span class="btn btn_wt showModal" data-source="awwa-page-get-ribas" data-target="#modal1">Отримати
+                    <span class="btn btn_wt btnPc showModal" data-source="awwa-page-get-ribas"
+                        data-target="#modal1">Отримати
                         доступ</span>
                 </div>
             </div>
@@ -473,12 +484,14 @@
                     <b>
                         Gg. Semar No.3, Kerobokan, Kec. Kuta Utara, Kabupaten Badung, Bali, Індонезія
                     </b>
-                    <span class="btn btn_grn showModal" data-source="awwa-page-map-visit-office"
+                    <span class="btn btn_grn btnPc showModal" data-source="awwa-page-map-visit-office"
                         data-target="#modal1">Відвідати офіс</span>
                 </div>
-                <div class="awwaMapCol">
+                <div class="awwaMapCol awwaMapCol34">
                     <img src="img/awwa-map.png" alt="Map">
                 </div>
+                <span class="btn btn_grn btnPc2 showModal" data-source="awwa-page-map-visit-office"
+                    data-target="#modal1">Відвідати офіс</span>
             </div>
         </div>
     </section>
@@ -544,8 +557,14 @@
     <section class="sec secInvestMain">
         <div class="container containerWr">
             <h3 class="titleM">Як інвестувати з нами</h3>
+
+            <div class="photoGalWrapperBtn photoGalWrapperBtnPc">
+                <button type="button" class="tabColBtn2 active">Просто прилетіти</button>
+                <button type="button" class="tabColBtn2">Просто онлайн</button>
+            </div>
+
             <div class="investMainRow">
-                <div class="investMainCol">
+                <div class="investMainCol tabRow2 active">
                     <div class="investMainColTitle">Просто прилетіти</div>
                     <div class="investMainColList">
                         <div class="investMainColListT">
@@ -583,7 +602,7 @@
                     </div>
                     <!---->
                 </div>
-                <div class="investMainCol">
+                <div class="investMainCol tabRow2">
                     <div class="investMainColTitle">Просто онлайн</div>
                     <div class="investMainColList">
                         <div class="investMainColListT">
@@ -780,8 +799,8 @@
         <div class="container containerWr">
             <h3 class="titleM">Новини</h3>
             <div class="awwaNewsRow">
-                <div class="newsListWrapper">
-                    <article class="topNews">
+                <div class="newsListWrapper newsSlider">
+                    <article class="topNews item_slide active">
                         <div class="topNewsDesc">
                             <div class="topNewsDate">Дата публікації: 2024.10.11</div>
                             <div class="topNewsTitle">Активне будівництво на Балі – нові інфраструктурні проєкти
@@ -798,7 +817,7 @@
                             <img src="img/news-list.jpg" alt="News">
                         </div>
                     </article>
-                    <article class="topNews">
+                    <article class="topNews item_slide">
                         <div class="topNewsDesc">
                             <div class="topNewsDate">Дата публікації: 2024.10.11</div>
                             <div class="topNewsTitle">Активне будівництво на Балі – нові інфраструктурні проєкти
@@ -815,7 +834,7 @@
                             <img src="img/news-list.jpg" alt="News">
                         </div>
                     </article>
-                    <article class="topNews">
+                    <article class="topNews item_slide">
                         <div class="topNewsDesc">
                             <div class="topNewsDate">Дата публікації: 2024.10.11</div>
                             <div class="topNewsTitle">Активне будівництво на Балі – нові інфраструктурні проєкти
@@ -832,6 +851,16 @@
                             <img src="img/news-list.jpg" alt="News">
                         </div>
                     </article>
+
+                    <div class="nav_slide">
+                        <button type="button"><span><img src="img/Icon-left.svg" alt="Arrow"></span></button>
+                        <div class="nav_dots">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <button type="button"><span><img src="img/Icon-right.svg" alt="Arrow"></span></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -840,8 +869,14 @@
     <section class="sec secOurProjects">
         <div class="container containerWr">
             <h3 class="titleM">Наші проекти</h3>
+
+            <div class="photoGalWrapperBtn photoGalWrapperBtnPc">
+                <button type="button" class="tabColBtn3 active">Virgin Beach</button>
+                <button type="button" class="tabColBtn3">Moon rock</button>
+            </div>
+
             <div class="ourProjectsRow">
-                <div class="ourProjectsCol">
+                <div class="ourProjectsCol tabRow3 active">
                     <div class="ourProjectsColCarousel ourProjectsColCarousel1">
                         <span class="projectsCheck"><img src="img/check2.svg"> Гаряча пропозиція</span>
                         <div class="item_slide ourProjectsColCarouselSlide active">
@@ -901,7 +936,7 @@
                         <a href="#" class="btn btn_grn">Деталі</a>
                     </div>
                 </div>
-                <div class="ourProjectsCol">
+                <div class="ourProjectsCol tabRow3">
                     <div class="ourProjectsColCarousel ourProjectsColCarousel2">
                         <span class="projectsCheck"><img src="img/check.svg"> Вже доступний</span>
                         <div class="item_slide ourProjectsColCarouselSlide active">
@@ -967,7 +1002,7 @@
         </div>
     </section>
 
-    <section class="sec secOurProjects">
+    <section class="sec secOurProjects secOurProjects100">
         <div class="container containerWr">
             <div class="ourProjects">
                 <div class="ourProjectsT">
@@ -1099,6 +1134,48 @@
     </script>
 
     <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.tabColBtn2');
+            const contents2 = document.querySelectorAll('.tabRow2');
+
+            buttons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    const isActive = button.classList.contains('active');
+
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    contents2.forEach(content => content.classList.remove('active'));
+
+                    if (!isActive) {
+                        button.classList.add('active');
+                        contents2[index].classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.tabColBtn3');
+            const contents2 = document.querySelectorAll('.tabRow3');
+
+            buttons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    const isActive = button.classList.contains('active');
+
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    contents2.forEach(content => content.classList.remove('active'));
+
+                    if (!isActive) {
+                        button.classList.add('active');
+                        contents2[index].classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
         class Slider {
             constructor(containerSelector) {
                 this.container = document.querySelector(containerSelector);
@@ -1173,6 +1250,12 @@
         new Slider('.koketitSlide');
         new Slider('.ourProjectsColCarousel1');
         new Slider('.ourProjectsColCarousel2');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            if (window.innerWidth < 980) {
+                new Slider('.newsSlider');
+            }
+        });
     </script>
 </body>
 

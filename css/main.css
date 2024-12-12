@@ -1635,6 +1635,8 @@ button {
     justify-content: space-between;
 }
 
+.tabColBtn3,
+.tabColBtn2,
 .tabColBtn {
     width: -webkit-fill-available;
     border: none;
@@ -1646,6 +1648,10 @@ button {
     border-bottom: 1px solid #767676;
 }
 
+.tabColBtn3:hover,
+.tabColBtn3.active,
+.tabColBtn2:hover,
+.tabColBtn2.active,
 .tabColBtn:hover,
 .tabColBtn.active {
     color: #fff;
@@ -2407,4 +2413,28 @@ button {
     flex-direction: row;
     gap: 5px;
     align-items: center;
+}
+
+.secHeadInfo2Title {
+    display: none;
+}
+
+.photoGalWrapperBtnPc {
+    display: none;
+}
+
+.btnPc {
+    display: flex;
+}
+
+.btnPc2 {
+    display: none;
+}
+
+.secAwwaNews .nav_slide {
+    display: none;
+}
+
+.secAwwaNews .topNewsPic img {
+    margin: 0;
 }
