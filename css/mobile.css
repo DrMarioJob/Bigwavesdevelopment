@@ -830,11 +830,11 @@
     }
 
     .secAwwaNews {
-        margin-top: 100px;
+        margin: 100px 0;
     }
 
-    .secOurProjects {
-        margin-top: 100px;
+    .secOurProjects2 {
+        margin-bottom: 100px;
     }
 
     .secAwwaNews .topNews {
