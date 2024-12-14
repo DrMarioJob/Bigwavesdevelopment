@@ -2438,3 +2438,106 @@ button {
 .secAwwaNews .topNewsPic img {
     margin: 0;
 }
+
+/*-----------*/
+
+.tableWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+}
+
+.tableDCol2 {
+    display: flex;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+}
+
+.tableDCol {
+    width: -webkit-fill-available;
+}
+
+.tableDRow4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tableDRowH {
+    background: #2c2c2c;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+    font-size: 24px !important;
+    height: 91px;
+    width: -webkit-fill-available;
+}
+
+.tableDRow2n {
+    background: #434343;
+    font-size: 20px;
+    padding: 10px 25px 10px 25px;
+    font-family: "Manrope", serif !important;
+    font-weight: 400;
+    text-align: center;
+}
+
+.tableDRow3TR {
+    text-align: right;
+}
+
+.tableDRow2 {
+    width: -webkit-fill-available;
+}
+
+.tableDRow3 {
+    width: -webkit-fill-available;
+}
+
+.tableDRow3TC {
+    text-align: center;
+    gap: 5px;
+}
+
+.tableDRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tableDRow {
+    padding: 10px 25px 10px 0;
+    font-size: 20px;
+    border-bottom: 1px solid #383838;
+}
+
+.tableDRow.active {
+    color: #2EAFA3;
+    font-weight: 800;
+    border-color: #2EAFA3;
+}
+
+.tableDColwMin {
+    min-width: 587px;
+}
+
+.tableDColwMin .tableDRow {
+    padding-left: 25px;
+}
+
+.tableDCollRd {
+    border-radius: 24px 0 0 0;
+    overflow: hidden;
+}
+
+.tableDColrRd {
+    border-radius: 0 24px 0 0;
+    overflow: hidden;
+}
+
+.tableDRowbCol {
+    color: #2EAFA3;
+    font-weight: 800;
+}
+
+.tableWrapper48 {
+    margin-top: 48px;
+}
