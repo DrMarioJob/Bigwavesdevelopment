@@ -1560,7 +1560,7 @@ button {
     content: '';
     width: 615px;
     height: 263px;
-    background: url(../img/awwa-head-left.svg);
+    background: url(../img/awwa-head-left.svg) no-repeat;
     position: absolute;
     bottom: 0;
     left: 0;
