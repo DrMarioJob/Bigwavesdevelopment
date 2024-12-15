@@ -996,6 +996,11 @@
         overflow: hidden;
     }
 
+    .tableWrapper48 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     .tableWrapper48 .tableDRow3TR {
         width: auto;
     }
