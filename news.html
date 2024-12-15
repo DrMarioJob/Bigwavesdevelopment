@@ -25,7 +25,7 @@
                 <div class="titleM">Форма зв’язку</div>
                 <form action="" method="get" id="bottomForm">
                     <input type="hidden" id="formSource" name="formSource">
-                    <div class="formModalWrapper">
+                    <div class="formModalWrapper formGroupContainer">
                         <div class="formGroupGrid2">
                             <div class="formGroup">
                                 <label for="">Ваше ім'я*</label>
@@ -41,7 +41,7 @@
                                 <label for="">Ваш email</label>
                                 <input type="text" name="formMail" id="formMail" placeholder="mail@mail.com">
                             </div>
-                            <div class="formGroup">
+                            <div class="formGroup usernameField" style="display: none;">
                                 <label for="">Ваш юзернейм</label>
                                 <input type="text" name="formUserName" id="formUserName" placeholder="@username">
                             </div>
@@ -49,14 +49,16 @@
                         <div class="formGroupFlex2">
                             <div class="formGroup">
                                 <label for="formTelegram">
-                                    <input type="radio" name="formMedia" id="formTelegram" value="Telegram">
+                                    <input type="radio" name="formMedia" id="formTelegram" value="Telegram"
+                                        class="mediaInput">
                                     <span class="formSpan"></span>
                                     Telegram
                                 </label>
                             </div>
                             <div class="formGroup">
                                 <label for="formWhatsApp">
-                                    <input type="radio" name="formMedia" id="formWhatsApp" value="WhatsApp" checked>
+                                    <input type="radio" name="formMedia" id="formWhatsApp" value="WhatsApp" checked
+                                        class="mediaInput">
                                     <span class="formSpan"></span>
                                     WhatsApp
                                 </label>
