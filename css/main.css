@@ -1302,7 +1302,7 @@ body {
 }
 
 .formGroupGrid2.active> :nth-child(3) {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 2;
 }
 
