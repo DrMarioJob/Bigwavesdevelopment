@@ -1750,6 +1750,7 @@ button {
     position: absolute;
     top: 120px;
     left: 60px;
+    max-width: 152px;
 }
 
 .koketitRow {
@@ -2436,6 +2437,10 @@ button {
     align-items: center;
 }
 
+.projectsCheck img {
+    width: 15px;
+}
+
 .secHeadInfo2Title {
     display: none;
 }
@@ -2561,4 +2566,15 @@ button {
 
 .tableWrapper48 {
     margin-top: 48px;
+}
+
+.secAwwaMap a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.map_tra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
