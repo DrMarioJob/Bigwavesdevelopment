@@ -1092,5 +1092,41 @@
         font-size: 8px;
     }
 
+    .mDots img {
+        min-height: auto;
+    }
+
+    .dynamicsGrowthRow2 {
+        grid-template-columns: 1fr;
+    }
+
+    .dynamicsGrowthChart {
+        padding-right: 0;
+        gap: 30px;
+        max-width: 322px;
+        margin: 48px auto 100px auto;
+    }
+
+    .chartLine {
+        top: 29%;
+        left: -12px;
+        transform: rotate(-39.8deg);
+    }
+
+    .projectConceptGalRow {
+        flex-direction: column;
+    }
+
+    .projectConceptGalRow {
+        margin-top: 0;
+    }
+
+    .projectConceptGalCol {
+        margin-top: 20px;
+    }
+
+    .mt48 {
+        margin-top: 100px;
+    }
 
 }
