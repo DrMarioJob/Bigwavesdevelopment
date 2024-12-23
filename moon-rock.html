@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigwavesdevelopment</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css?v=2.1.1">
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modalWrapper hidden" id="modal1">
+        <button type="button" class="closeModalBtn">
+            <img src="img/close.svg" alt="Close">
+        </button>
+        <div class="modalRow">
+            <div class="modalCol modalColHd">
+                <img src="img/modal-pic.jpg" alt="Modal">
+            </div>
+            <div class="modalCol modalColPd">
+                <div class="titleM">Форма зв’язку</div>
+                <form action="" method="get" id="bottomForm">
+                    <input type="hidden" id="formSource" name="formSource">
+                    <div class="formModalWrapper formGroupContainer">
+                        <div class="formGroupGrid2">
+                            <div class="formGroup">
+                                <label for="">Ваше ім'я*</label>
+                                <input type="text" name="formName" id="formName" placeholder="Name" required>
+                            </div>
+                            <div class="formGroup">
+                                <label for="">Ваш телефон*</label>
+                                <input type="text" name="formPhone" id="formPhone" placeholder="+000000000"
+                                    class="formPhone" required>
+                                <div class="phoneSuggestions suggestions"></div>
+                            </div>
+                            <div class="formGroup">
+                                <label for="">Ваш email</label>
+                                <input type="text" name="formMail" id="formMail" placeholder="mail@mail.com">
+                            </div>
+                            <div class="formGroup usernameField" style="display: none;">
+                                <label for="">Ваш юзернейм</label>
+                                <input type="text" name="formUserName" id="formUserName" placeholder="@username">
+                            </div>
+                        </div>
+                        <div class="formGroupFlex2">
+                            <div class="formGroup">
+                                <label for="formTelegram">
+                                    <input type="radio" name="formMedia" id="formTelegram" value="Telegram"
+                                        class="mediaInput">
+                                    <span class="formSpan"></span>
+                                    Telegram
+                                </label>
+                            </div>
+                            <div class="formGroup">
+                                <label for="formWhatsApp">
+                                    <input type="radio" name="formMedia" id="formWhatsApp" value="WhatsApp" checked
+                                        class="mediaInput">
+                                    <span class="formSpan"></span>
+                                    WhatsApp
+                                </label>
+                            </div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="">Оберіть зручний спосіб звʼязку</label>
+                        </div>
+                        <div class="formGroupFlex2">
+                            <div class="formGroup">
+                                <label for="formCallBack">
+                                    <input type="radio" name="formSelOpt" id="formCallBack" value="Передзвонити">
+                                    <span class="formSpan"></span>
+                                    Передзвонити
+                                </label>
+                            </div>
+                            <div class="formGroup">
+                                <label for="formWrite">
+                                    <input type="radio" name="formSelOpt" id="formWrite" value="Написати" checked>
+                                    <span class="formSpan"></span>
+                                    Написати
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" id="formBtn" class="btn btn_grn">Залишити контакти</button>
+                        <div class="formDesc">
+                            Натискаючи кнопку, ви даєте згоду на обробку ваших особистих даних і погоджуєтеся з
+                            нашою
+                            політикою конфіденційності.
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <main class="mainWrapper">
+        <header class="header">
+            <!-- Mobile nav -->
+            <div class="mobileHead">
+                <a href="/"><img src="img/logo-m.svg" alt="Logo"></a>
+                <button type="button" class="mobileHeadBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <!-- Mobile nav -->
+            <nav class="navigation">
+                <div class="navLine">
+                    <div class="navLine1">
+                        <a href="#">Головна</a>
+                        <a href="#">Про нас</a>
+                        <a href="#">Проєкти</a>
+                        <a href="#">Про Балі</a>
+                        <a href="#">Партнерам</a>
+                    </div>
+                    <div class="navLine2">
+                        <a href="#">Блог</a>
+                        <a href="#">Поширені запитання</a>
+                        <a href="#">Карєра</a>
+                        <a href="#">Контакти</a>
+                    </div>
+                </div>
+                <a href="/" class="logo"><img src="img/logo.svg" alt="Logo"></a>
+            </nav>
+        </header>
+    </main>
+
+    <section class="sec secAwwa">
+        <div class="container2">
+            <div class="secHeadInfo2Title">MoonRock 2.0</div>
+            <div class="headPrWrapper">
+                <div class="headPrBq headPrBqMoon">
+                    <b>
+                        <img src="img/listBq.svg" alt="Ico">
+                        Вiлли Moonrock 1.0 вже повністю розпродані! Це успішний проєкт, що підтверджує нашу надійність і
+                        попит на ринку.
+                    </b>
+                    <p>
+                        Тепер відкрито продаж вілл Moonrock 2.0 — скористайтеся можливістю інвестувати в новий етап
+                        розвитку. Не пропустіть шанс
+                        стати частиною нашого наступного успішного проєкту!
+                    </p>
+                </div>
+                <div class="headPrLogo headPrLogoMoon">
+                    <img src="img/moon-rock-logo.png.svg" alt="Awwa logo">
+                </div>
+                <img src="img/moon-rock-head.jpg" class="prHeader" alt="Head">
+            </div>
+        </div>
+    </section>
+
+    <section class="sec secHeadInfo2">
+        <div class="containerWr">
+            <div class="headAwRow">
+                <div class="headAwCol headAwCol1 headAwCol1Moon">
+                    <div>
+                        <b>
+                            Комплекс вілл з власним басейном в Убуді
+                        </b>
+                        <p>
+                            Атмосфера наших вілл доповнить позитивні враження від
+                            подорожі, роблячи відпочинок по-справжньому незабутнім.
+                        </p>
+                    </div>
+                    <span class="btn btn_wt showModal" data-source="moon-rock-page-header-contact"
+                        data-target="#modal1">Зв'яжіться з нами</span>
+                </div>
+                <div class="headAwCol headAwCol2">
+                    <div class="headAwCol2Name headAwCol2NameMoon">
+                        MoonRock 2.0
+                    </div>
+                    <div>
+                        <span>16</span>
+                        <p>
+                            вілл
+                        </p>
+                    </div>
+                    <div>
+                        <span>17.7%</span>
+                        <p>
+                            річних
+                        </p>
+                    </div>
+                    <div>
+                        <span>10 років</span>
+                        <p>
+                            гарантії на конструктивні елементи
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec secPhotoGal">
+        <div class="container containerWr">
+            <h3 class="titleM titleMFl titleMFl2">
+                <div class="titleMFl2Row">
+                    <span>Фото готелю</span>
+                    <span class="btn btn_grn btnPc showModal" data-source="moon-rock-page-select-unit"
+                        data-target="#modal1">Обрати
+                        юніт</span>
+                </div>
+                <div class="moonSlideBtn">
+                    <button type="button" class="btnMoonNum btnMoonNum20 active">
+                        <img src="img/moon-rook-2.png.svg" alt="Ico">
+                        <span>
+                            MoonRock 2.0
+                            <p>Вже доступний</p>
+                        </span>
+                    </button>
+                    <button type="button" class="btnMoonNum btnMoonNum10">
+                        <img src="img/moon-rook-1.png.svg" alt="Ico">
+                        <span>
+                            MoonRock 1.0
+                            <p>Розпродано</p>
+                        </span>
+                    </button>
+
+                </div>
+            </h3>
+
+            <div class="photoGalWrapper tabRowMoon active">
+                <div class="photoGalWrapperBtn">
+                    <button type="button" class="tabColBtn active">Інтер’єр</button>
+                    <button type="button" class="tabColBtn">Екстер’єр</button>
+                </div>
+                <div class="photoGalWrapperTab tabRow active">
+                    <div class="awwaSlide">
+                        <div class="awwaSlideWrapper">
+
+                            <div class="item_slide active">
+                                <span class="moonStageSp">Зробили</span>
+                                <div class="mSlide"><img src="img/awwa-slide1.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <span class="moonStageSp">Зробили</span>
+                                <div class="mSlide"><img src="img/awwa-slide2.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <span class="moonStageSp">Зробили</span>
+                                <div class="mSlide"><img src="img/awwa-slide3.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <span class="moonStageSp">Зробили</span>
+                                <div class="mSlide"><img src="img/awwa-slide4.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <span class="moonStageSp">Зробили</span>
+                                <div class="mSlide"><img src="img/awwa-slide5.jpg"></div>
+                            </div>
+
+                            <div class="awwaSlideDots">
+                                <div class="mDots active"><img src="img/awwa-slide1-1.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide2-2.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide3-3.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide4-4.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide5-5.jpg"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="nav_slide">
+                            <button type="button"><span><img src="img/Icon-left.svg" alt="Arrow"></span></button>
+                            <div class="nav_dots">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <button type="button"><span><img src="img/Icon-right.svg" alt="Arrow"></span></button>
+                        </div>
+                        <span class="btn btn_grn btnPc2 showModal" data-source="awwa-page-select-unit"
+                            data-target="#modal1">Обрати
+                            юніт</span>
+                    </div>
+                </div>
+                <div class="photoGalWrapperTab tabRow">
+                    <div class="awwaSlide2">
+                        <div class="awwaSlideWrapper">
+                            <div class="item_slide active">
+                                <span class="moonStageSp">Зробили</span>
+                                <div class="mSlide"><img src="img/awwa-slide6.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <span class="moonStageSp">Зробили</span>
+                                <div class="mSlide"><img src="img/awwa-slide7.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <span class="moonStageSp">Зробили</span>
+                                <div class="mSlide"><img src="img/awwa-slide8.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <span class="moonStageSp">Зробили</span>
+                                <div class="mSlide"><img src="img/awwa-slide9.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <span class="moonStageSp">Зробили</span>
+                                <div class="mSlide"><img src="img/awwa-slide10.jpg"></div>
+                            </div>
+
+                            <div class="awwaSlideDots">
+                                <div class="mDots active"><img src="img/awwa-slide6-6.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide7-7.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide8-8.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide9-9.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide10-10.jpg"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="nav_slide">
+                            <button type="button"><span><img src="img/Icon-left.svg" alt="Arrow"></span></button>
+                            <div class="nav_dots">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <button type="button"><span><img src="img/Icon-right.svg" alt="Arrow"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photoGalWrapper tabRowMoon">
+                <div class="photoGalWrapperBtn">
+                    <button type="button" class="tabColBtn4 active">Інтер’єр</button>
+                    <button type="button" class="tabColBtn4">Екстер’єр</button>
+                </div>
+                <div class="photoGalWrapperTab tabRow4 active">
+                    <div class="awwaSlide3">
+                        <div class="awwaSlideWrapper">
+                            <div class="item_slide active">
+                                <div class="mSlide"><img src="img/awwa-slide1.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <div class="mSlide"><img src="img/awwa-slide2.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <div class="mSlide"><img src="img/awwa-slide3.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <div class="mSlide"><img src="img/awwa-slide4.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <div class="mSlide"><img src="img/awwa-slide5.jpg"></div>
+                            </div>
+
+                            <div class="awwaSlideDots">
+                                <div class="mDots active"><img src="img/awwa-slide1-1.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide2-2.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide3-3.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide4-4.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide5-5.jpg"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="nav_slide">
+                            <button type="button"><span><img src="img/Icon-left.svg" alt="Arrow"></span></button>
+                            <div class="nav_dots">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <button type="button"><span><img src="img/Icon-right.svg" alt="Arrow"></span></button>
+                        </div>
+                        <span class="btn btn_grn btnPc2 showModal" data-source="awwa-page-select-unit"
+                            data-target="#modal1">Обрати
+                            юніт</span>
+                    </div>
+                </div>
+                <div class="photoGalWrapperTab tabRow4">
+                    <div class="awwaSlide4">
+                        <div class="awwaSlideWrapper">
+                            <div class="item_slide active">
+                                <div class="mSlide"><img src="img/awwa-slide6.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <div class="mSlide"><img src="img/awwa-slide7.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <div class="mSlide"><img src="img/awwa-slide8.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <div class="mSlide"><img src="img/awwa-slide9.jpg"></div>
+                            </div>
+                            <div class="item_slide">
+                                <div class="mSlide"><img src="img/awwa-slide10.jpg"></div>
+                            </div>
+
+                            <div class="awwaSlideDots">
+                                <div class="mDots active"><img src="img/awwa-slide6-6.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide7-7.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide8-8.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide9-9.jpg"></div>
+                                <div class="mDots"><img src="img/awwa-slide10-10.jpg"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="nav_slide">
+                            <button type="button"><span><img src="img/Icon-left.svg" alt="Arrow"></span></button>
+                            <div class="nav_dots">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <button type="button"><span><img src="img/Icon-right.svg" alt="Arrow"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec secHousesMain">
+        <div class="container containerWr">
+            <div class="housesMainRow">
+                <div class="housesMainCol housesMainColDesc">
+                    <div class="titleM titleMNone">
+                        Однокімнатна двоповерхова вілла
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>49 м2</b>
+                        <span>площа вілли з басейном</span>
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>1</b>
+                        <span>кімната</span>
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>1</b>
+                        <span>санвузол</span>
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>Басейн</b>
+                        <span>уточнюйте</span>
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>Від</b>
+                        <i>$124 000</i>
+                    </div>
+                    <span class="btn btn_grn showModal" data-source="awwa-page-one-bedroom-two-storey-villa"
+                        data-target="#modal1">Отримати консультацію</span>
+                </div>
+
+                <div class="housesMainColSlider housesMainColSliderActive1">
+                    <div class="titleM titleMBlock">
+                        Однокімнатна двоповерхова вілла
+                    </div>
+                    <div class="housesMainCol housesMainColImg item_slide active">
+                        <img src="img/moon-r-1.jpg" alt="Img">
+                    </div>
+                    <div class="housesMainCol housesMainColImg item_slide">
+                        <img src="img/moon-r-2.jpg" alt="Img">
+                    </div>
+
+                    <div class="nav_slide">
+                        <button type="button"><span><img src="img/Icon-left.svg" alt="Arrow"></span></button>
+                        <div class="nav_dots">
+                            <span class="active"></span>
+                            <span></span>
+                        </div>
+                        <button type="button"><span><img src="img/Icon-right.svg" alt="Arrow"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec secHousesMain2">
+        <div class="container containerWr">
+            <div class="housesMainRow">
+                <div class="housesMainCol housesMainColDesc">
+                    <div class="titleM titleMNone">
+                        Двокімнатна двоповерхова вілла
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>130 м2</b>
+                        <span>площа вілли з басейном</span>
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>2</b>
+                        <span>кімнати</span>
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>1</b>
+                        <span>вітальня</span>
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>3</b>
+                        <span>ванних кімнати</span>
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>Басейн</b>
+                        <span>на території</span>
+                    </div>
+                    <!-- <div class="housesMainCol housesMainColD2">
+                        <b>Від</b>
+                        <i>$124 000</i>
+                    </div> -->
+                    <span class="btn btn_grn showModal" data-source="awwa-page-one-bedroom-two-storey-villa2"
+                        data-target="#modal1">Отримати консультацію</span>
+                </div>
+                <div class="housesMainColSlider housesMainColSliderActive2">
+                    <div class="titleM titleMBlock">
+                        Двокімнатна двоповерхова вілла
+                    </div>
+                    <div class="housesMainCol housesMainColImg item_slide active">
+                        <img src="img/moon-r-3.jpg" alt="Img">
+                    </div>
+                    <div class="housesMainCol housesMainColImg item_slide">
+                        <img src="img/moon-r-4.jpg" alt="Img">
+                    </div>
+
+                    <div class="nav_slide">
+                        <button type="button"><span><img src="img/Icon-left.svg" alt="Arrow"></span></button>
+                        <div class="nav_dots">
+                            <span class="active"></span>
+                            <span></span>
+                        </div>
+                        <button type="button"><span><img src="img/Icon-right.svg" alt="Arrow"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec secHousesMain3">
+        <div class="container containerWr">
+            <div class="housesMainRow">
+                <div class="housesMainCol housesMainColDesc">
+                    <div class="titleM titleMNone">
+                        Трикімнатна двоповерхова вілла
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>136 м2</b>
+                        <span>площа вілли з басейном</span>
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>3</b>
+                        <span>кімнати</span>
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>2</b>
+                        <span>санвузли</span>
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>2</b>
+                        <span>вітальні</span>
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>Басейн</b>
+                        <span>на території</span>
+                    </div>
+                    <div class="housesMainCol housesMainColD2">
+                        <b>Від</b>
+                        <i>$342 000</i>
+                    </div>
+                    <span class="btn btn_grn showModal" data-source="awwa-page-one-bedroom-two-storey-villa3"
+                        data-target="#modal1">Отримати консультацію</span>
+                </div>
+                <div class="housesMainColSlider housesMainColSliderActive3">
+                    <div class="titleM titleMBlock">
+                        Трикімнатна двоповерхова вілла
+                    </div>
+                    <div class="housesMainCol housesMainColImg item_slide active">
+                        <img src="img/moon-r-5.jpg" alt="Img">
+                    </div>
+                    <div class="housesMainCol housesMainColImg item_slide">
+                        <img src="img/moon-r-6.jpg" alt="Img">
+                    </div>
+
+                    <div class="nav_slide">
+                        <button type="button"><span><img src="img/Icon-left.svg" alt="Arrow"></span></button>
+                        <div class="nav_dots">
+                            <span class="active"></span>
+                            <span></span>
+                        </div>
+                        <button type="button"><span><img src="img/Icon-right.svg" alt="Arrow"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec sec3Dmodel">
+        <div class="container containerWr">
+            <div class="model-3d">
+                <img src="img/3d-model.png" alt="Model">
+            </div>
+        </div>
+    </section>
+
+    <section class="sec secRibas">
+        <div class="container containerWr">
+            <div class="ribasRow">
+                <div class="ribasCol ribasCol5">
+                    <img src="img/phone2.png" class="ribasPhone" alt="Ribas">
+                    <span class="btn btn_wt btnPc2 showModal" data-source="moon-rock-get-ribas"
+                        data-target="#modal1">Отримати
+                        доступ</span>
+                </div>
+                <div class="ribasCol ribasCol2">
+                    <h3 class="titleM">
+                        Керуйте своїми апартаментами<br>
+                        легко і зручно через додаток<br>
+                        Ribas Інвестор у реальному часі!
+                    </h3>
+                    <div class="ribasColListWr">
+                        <div class="ribasColList">
+                            <div>
+                                <img src="img/ribas1.svg">Фінансова аналітика для об'єкта
+                            </div>
+                            <div>
+                                <img src="img/ribas2.svg">Календар бронювань
+                            </div>
+                            <div>
+                                <img src="img/ribas3.svg">Оперативна служба підтримки
+                            </div>
+                        </div>
+                        <div class="ribasColList">
+                            <div>
+                                <img src="img/ribas4.svg">Контроль стану апартаментів
+                            </div>
+                            <div>
+                                <img src="img/ribas5.svg">Баланс і історія виплат
+                            </div>
+                            <div>
+                                <img src="img/ribas6.svg">Маркетплейс доступних об'єктів
+                            </div>
+                        </div>
+                    </div>
+                    <span class="btn btn_wt btnPc showModal" data-source="moon-rock-page-get-ribas"
+                        data-target="#modal1">Отримати
+                        доступ</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec secAwwaMap">
+        <div class="container containerWr">
+            <div class="awwaMapRow">
+                <div class="awwaMapCol awwaMapCol2">
+                    <h3 class="titleM">Розташування</h3>
+                    <p>Убуд, 8 хвилин до пляжу Берава</p>
+                    <div class="map_tra">
+                        <img src="img/map-pin.svg" alt="Pin">
+                        <a href="https://maps.app.goo.gl/kRhX1AZPxgFXjiv79?g_st=ic" target="_blank">Прокласти
+                            маршрут</a>
+                    </div>
+
+                    <span class="btn btn_grn btnPc showModal" data-source="moon-rock-map-visit-office"
+                        data-target="#modal1">Записатись на візит</span>
+                </div>
+                <div class="awwaMapCol awwaMapCol34">
+                    <img src="img/moon-rock-map.png" alt="Map">
+                </div>
+                <span class="btn btn_grn btnPc2 showModal" data-source="moon-rock-map-visit-office"
+                    data-target="#modal1">Записатись на візит</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec secSelPayment">
+        <div class="container containerWr">
+            <h3 class="titleM">Варіанти оплати</h3>
+            <div class="selPaymentRow">
+                <div class="selPaymentCol">
+                    <div class="selPaymentColStage">
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="selPaymentColWr">
+                        <div class="selPaymentColSum">30%</div>
+                        <p>Перший внесок 30% від вартостіі юніту</p>
+                        <p>Зручний для вас графік наступних платежів</p>
+                    </div>
+                </div>
+                <div class="selPaymentCol">
+                    <div class="selPaymentColStage">
+                        <span></span>
+                    </div>
+                    <div class="selPaymentColWr">
+                        <div class="selPaymentColSum">100%</div>
+                        <p>Одноразовий платіж у 100% вартості</p>
+                        <p><span>10%</span> персональна вигода</p>
+                        <i>* Залежно від обраного юніту, поверху або проєкту
+                            персональна вигода може відрізнятися.</i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="selPaymentBq">
+                <div>
+                    Якщо ви не знайшли відповідний для вас спосіб оплати, не хвилюйтесь! Просто запросіть<br>
+                    консультацію, і ми допоможемо вам знайти інші можливості, що відповідатимуть вашим<br>потребам. Ми
+                    тут, щоб зробити процес максимально
+                    зручним і гнучким.
+                </div>
+                <span class="btn btn_grn showModal" data-source="moon-rock-payment-options-consultation"
+                    data-target="#modal1">Отримати консультацію</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec secInvestMain">
+        <div class="container containerWr">
+            <h3 class="titleM">Як інвестувати з нами</h3>
+
+            <div class="photoGalWrapperBtn photoGalWrapperBtnPc">
+                <button type="button" class="tabColBtn2 active">Просто прилетіти</button>
+                <button type="button" class="tabColBtn2">Просто онлайн</button>
+            </div>
+
+            <div class="investMainRow">
+                <div class="investMainCol tabRow2 active">
+                    <div class="investMainColTitle">Просто прилетіти</div>
+                    <div class="investMainColList">
+                        <div class="investMainColListT">
+                            <div class="investMainColListD">Прибуття</div>
+                            <span>Ми зустрінемо Вас по прибутті<br>в аеропорту Денпасар</span>
+                        </div>
+                        <div class="investMainColListN">1</div>
+                    </div>
+                    <div class="investMainColListArrow"><img src="img/list-arrow-b.svg"></div>
+                    <!---->
+                    <div class="investMainColList">
+                        <div class="investMainColListT">
+                            <div class="investMainColListD">Перегляд</div>
+                            <span>Показуємо Вам наші найкращі пропозиції<br>та надаємо професійні відповіді на всі ваші
+                                запитання.</span>
+                        </div>
+                        <div class="investMainColListN">2</div>
+                    </div>
+                    <div class="investMainColListArrow"><img src="img/list-arrow-b.svg"></div>
+                    <!---->
+                    <div class="investMainColList">
+                        <div class="investMainColListT">
+                            <div class="investMainColListD">Оформлення</div>
+                            <span>Наші юристи забезпечать професійний<br>супровід для швидкого та коректного оформлення
+                                угоди.</span>
+                        </div>
+                        <div class="investMainColListN">3</div>
+                    </div>
+                    <div class="investMainColListArrow"><img src="img/list-arrow-b.svg"></div>
+                    <!---->
+                    <div class="investMainColList active">
+                        <div class="investMainColListT">
+                            <div class="investMainColListD">Отримуйте <span>прибуток</span></div>
+                            <span>Ваша інвестиція працює на вас,<br>забезпечуючи стабільний дохід.</span>
+                        </div>
+                        <div class="investMainColListN">4</div>
+                    </div>
+                    <!---->
+                </div>
+                <div class="investMainCol tabRow2">
+                    <div class="investMainColTitle">Дистанційна угода</div>
+                    <div class="investMainColList">
+                        <div class="investMainColListT">
+                            <div class="investMainColListD">Підбір обʼєкту</div>
+                            <span>Ви обираєте той варіант<br>інвестування який вам сподобався</span>
+                        </div>
+                        <div class="investMainColListN">1</div>
+                    </div>
+                    <div class="investMainColListArrow"><img src="img/list-arrow-b.svg"></div>
+                    <!---->
+                    <div class="investMainColList">
+                        <div class="investMainColListT">
+                            <div class="investMainColListD">Віртуальна презентація</div>
+                            <span>Ми організуємо онлайн-дзвінок, представимо<br>найкращі пропозиції та надамо відповіді
+                                на всі ваші запитання.</span>
+                        </div>
+                        <div class="investMainColListN">2</div>
+                    </div>
+                    <div class="investMainColListArrow"><img src="img/list-arrow-b.svg"></div>
+                    <!---->
+                    <div class="investMainColList">
+                        <div class="investMainColListT">
+                            <div class="investMainColListD">Оформлення</div>
+                            <span>Наші юристи забезпечать швидке та<br>коректне оформлення онлайн-угоди.</span>
+                        </div>
+                        <div class="investMainColListN">3</div>
+                    </div>
+                    <div class="investMainColListArrow"><img src="img/list-arrow-b.svg"></div>
+                    <!---->
+                    <div class="investMainColList active">
+                        <div class="investMainColListT">
+                            <div class="investMainColListD">Отримуйте <span>прибуток</span></div>
+                            <span>Ваша інвестиція працює на вас,<br>забезпечуючи стабільний дохід.</span>
+                        </div>
+                        <div class="investMainColListN">4</div>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec secCalculatInves">
+        <div class="container containerWr">
+            <h3 class="titleM">Розрахунок окупності</h3>
+            <div class="calculatInvesRow">
+
+                <div class="tableWrapper">
+                    <div class="tableDCol tableDColwMin tableDCollRd">
+                        <div class="tableDRow tableDRowH">
+                            Стаття
+                        </div>
+                        <div class="tableDRow active">
+                            Чистий дохід
+                        </div>
+                        <div class="tableDRow">
+                            Заробітна плата
+                        </div>
+                        <div class="tableDRow">
+                            Витрати на збут (комісія Booking, ФОП тощо)
+                        </div>
+                        <div class="tableDRow">
+                            Комунальні витрати
+                        </div>
+                        <div class="tableDRow">
+                            Матеріальні виплати
+                        </div>
+                        <div class="tableDRow">
+                            Інше (ПО, банківські послуги та інші операційні виплати)
+                        </div>
+                        <div class="tableDRow active">
+                            EBITDA (операційний прибуток) на рік
+                        </div>
+                        <div class="tableDRow">
+                            Резервний фонд
+                        </div>
+                        <div class="tableDRow ">
+                            Комісія за керування
+                        </div>
+                        <div class="tableDRow active">
+                            Прибуток після податків
+                        </div>
+                        <div class="tableDRow ">
+                            Податок на прибуток
+                        </div>
+                        <div class="tableDRow ">
+                            EBIT (чистий прибуток інвестора)
+                        </div>
+                    </div>
+                    <div class="tableDCol tableDRow3TR">
+                        <div class="tableDRow tableDRowH">
+                            Частка доходу
+                        </div>
+                        <div class="tableDRow active">
+                            100%
+                        </div>
+                        <div class="tableDRow">
+                            9.9%
+                        </div>
+                        <div class="tableDRow">
+                            5.9%
+                        </div>
+                        <div class="tableDRow">
+                            4.9%
+                        </div>
+                        <div class="tableDRow">
+                            4.0%
+                        </div>
+                        <div class="tableDRow">
+                            3.1%
+                        </div>
+                        <div class="tableDRow active">
+                            72.2%
+                        </div>
+                        <div class="tableDRow">
+                            2.2%
+                        </div>
+                        <div class="tableDRow ">
+                            19.0%
+                        </div>
+                        <div class="tableDRow active">
+                            51.0%
+                        </div>
+                        <div class="tableDRow ">
+                            2.6%
+                        </div>
+                        <div class="tableDRow ">
+                            48.5%
+                        </div>
+                    </div>
+                    <div class="tableDCol">
+                        <div class="tableDRow tableDRowH tableDRow3TC tableDColrRd">
+                            Сума, $
+                            <div class="tableDCol2">
+                                <div class="tableDRow2 tableDRow2n">1-3 роки</div>
+                                <div class="tableDRow2 tableDRow2n">4-10 років</div>
+                            </div>
+                        </div>
+                        <div class="tableDRow4">
+                            <div class="tableDRow3 tableDRow3TR">
+                                <div class="tableDRow active">
+                                    36 735
+                                </div>
+                                <div class="tableDRow">
+                                    3 644
+                                </div>
+                                <div class="tableDRow">
+                                    2 172
+                                </div>
+                                <div class="tableDRow">
+                                    1 815
+                                </div>
+                                <div class="tableDRow">
+                                    1 455
+                                </div>
+                                <div class="tableDRow">
+                                    1 139
+                                </div>
+                                <div class="tableDRow active">
+                                    26 511
+                                </div>
+                                <div class="tableDRow">
+                                    795
+                                </div>
+                                <div class="tableDRow ">
+                                    6 980
+                                </div>
+                                <div class="tableDRow active">
+                                    18 736
+                                </div>
+                                <div class="tableDRow ">
+                                    937
+                                </div>
+                                <div class="tableDRow ">
+                                    17 799
+                                </div>
+                            </div>
+                            <div class="tableDRow3 tableDRow3TR">
+                                <div class="tableDRow active">
+                                    44 864
+                                </div>
+                                <div class="tableDRow">
+                                    4 450
+                                </div>
+                                <div class="tableDRow">
+                                    2 652
+                                </div>
+                                <div class="tableDRow">
+                                    2 216
+                                </div>
+                                <div class="tableDRow">
+                                    1 776
+                                </div>
+                                <div class="tableDRow">
+                                    1 391
+                                </div>
+                                <div class="tableDRow active">
+                                    32 378
+                                </div>
+                                <div class="tableDRow">
+                                    971
+                                </div>
+                                <div class="tableDRow ">
+                                    8 524
+                                </div>
+                                <div class="tableDRow active">
+                                    22 882
+                                </div>
+                                <div class="tableDRow ">
+                                    1 144
+                                </div>
+                                <div class="tableDRow ">
+                                    21 738
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tableWrapper tableWrapper48">
+                    <div class="tableDCol tableDColwMin tableDCollRd">
+                        <div class="tableDRow tableDRowH">
+                            Стаття
+                        </div>
+                        <div class="tableDRow">
+                            Операційна дохідність:
+                        </div>
+                        <div class="tableDRow">
+                            Загальна дохідність:
+                        </div>
+                    </div>
+                    <div class="tableDCol tableDRow3TR">
+                        <div class="tableDRow tableDRowH">
+                            Ставка, дохідності, %
+                        </div>
+                        <div class="tableDRow tableDRowbCol">
+                            6,3
+                        </div>
+                        <div class="tableDRow tableDRowbCol">
+                            -
+                        </div>
+                    </div>
+                    <div class="tableDCol tableDRow3TR tableDColrRd">
+                        <div class="tableDRow tableDRowH">
+                            Окупність, роки:
+                        </div>
+                        <div class="tableDRow tableDRowbCol">
+                            15,9%
+                        </div>
+                        <div class="tableDRow tableDRowbCol">
+                            23,0%
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec secAwwaNews">
+        <div class="container containerWr">
+            <h3 class="titleM">Новини</h3>
+            <div class="awwaNewsRow">
+                <div class="newsListWrapper newsSlider">
+                    <article class="topNews item_slide active">
+                        <div class="topNewsDesc">
+                            <div class="topNewsDate">Дата публікації: 2024.10.11</div>
+                            <div class="topNewsTitle">Активне будівництво на Балі – нові інфраструктурні проєкти
+                                приваблюють інвесторів</div>
+                            <div class="topNewsText">
+                                На острові Балі триває масштабне будівництво, спрямоване на покращення
+                                інфраструктури та
+                                залучення інвестицій. Основний
+                                акцент робиться...
+                            </div>
+                            <a href="news-page.html" class="btn btn_grn">Читати новину</a>
+                        </div>
+                        <div class="topNewsPic">
+                            <img src="img/news-list.jpg" alt="News">
+                        </div>
+                    </article>
+                    <article class="topNews item_slide">
+                        <div class="topNewsDesc">
+                            <div class="topNewsDate">Дата публікації: 2024.10.11</div>
+                            <div class="topNewsTitle">Активне будівництво на Балі – нові інфраструктурні проєкти
+                                приваблюють інвесторів</div>
+                            <div class="topNewsText">
+                                На острові Балі триває масштабне будівництво, спрямоване на покращення
+                                інфраструктури та
+                                залучення інвестицій. Основний
+                                акцент робиться...
+                            </div>
+                            <a href="news-page.html" class="btn btn_grn">Читати новину</a>
+                        </div>
+                        <div class="topNewsPic">
+                            <img src="img/news-list.jpg" alt="News">
+                        </div>
+                    </article>
+                    <article class="topNews item_slide">
+                        <div class="topNewsDesc">
+                            <div class="topNewsDate">Дата публікації: 2024.10.11</div>
+                            <div class="topNewsTitle">Активне будівництво на Балі – нові інфраструктурні проєкти
+                                приваблюють інвесторів</div>
+                            <div class="topNewsText">
+                                На острові Балі триває масштабне будівництво, спрямоване на покращення
+                                інфраструктури та
+                                залучення інвестицій. Основний
+                                акцент робиться...
+                            </div>
+                            <a href="news-page.html" class="btn btn_grn">Читати новину</a>
+                        </div>
+                        <div class="topNewsPic">
+                            <img src="img/news-list.jpg" alt="News">
+                        </div>
+                    </article>
+
+                    <div class="nav_slide">
+                        <button type="button"><span><img src="img/Icon-left.svg" alt="Arrow"></span></button>
+                        <div class="nav_dots">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <button type="button"><span><img src="img/Icon-right.svg" alt="Arrow"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec secOurProjects2">
+        <div class="container containerWr">
+            <h3 class="titleM">Наші проекти</h3>
+
+            <div class="photoGalWrapperBtn photoGalWrapperBtnPc">
+                <button type="button" class="tabColBtn3 active">Virgin Beach</button>
+                <button type="button" class="tabColBtn3">Moon rock</button>
+            </div>
+
+            <div class="ourProjectsRow">
+                <div class="ourProjectsCol tabRow3 active">
+                    <div class="ourProjectsColCarousel ourProjectsColCarousel1">
+                        <span class="projectsCheck"><img src="img/building.svg"> Будується</span>
+                        <div class="item_slide ourProjectsColCarouselSlide active">
+                            <img src="img/virgin-slider1.jpg" alt="Slide">
+                        </div>
+                        <div class="item_slide ourProjectsColCarouselSlide">
+                            <img src="img/virgin-slider1.jpg" alt="Slide">
+                        </div>
+                        <div class="item_slide ourProjectsColCarouselSlide">
+                            <img src="img/virgin-slider1.jpg" alt="Slide">
+                        </div>
+                        <div class="item_slide ourProjectsColCarouselSlide">
+                            <img src="img/virgin-slider1.jpg" alt="Slide">
+                        </div>
+                        <div class="item_slide ourProjectsColCarouselSlide">
+                            <img src="img/virgin-slider1.jpg" alt="Slide">
+                        </div>
+
+                        <div class="ourProjectsColCarouselDots">
+                            <div class="active"><img src="img/virgin-slider1.jpg" alt="Slide"></div>
+                            <div><img src="img/virgin-slider1.jpg" alt="Slide"></div>
+                            <div><img src="img/virgin-slider1.jpg" alt="Slide"></div>
+                            <div><img src="img/virgin-slider1.jpg" alt="Slide"></div>
+                            <div><img src="img/virgin-slider1.jpg" alt="Slide"></div>
+                        </div>
+
+                        <div class="nav_slide">
+                            <button type="button"><span><img src="img/Icon-left.svg" alt="Arrow"></span></button>
+                            <div class="nav_dots">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <button type="button"><span><img src="img/Icon-right.svg" alt="Arrow"></span></button>
+                        </div>
+                    </div>
+                    <div class="ourProjectsColInfoWr">
+                        <div class="ourProjectsColInfo">
+                            <div class="ourProjectsColInfo1">Virgin Beach</div>
+                            <div class="ourProjectsColInfo2">
+                                <div>168 000$</div>
+                                <div>Інвестиція від</div>
+                            </div>
+                            <div class="ourProjectsColInfo2">
+                                <div>17.7 %</div>
+                                <div>Річний ROI</div>
+                            </div>
+                            <div class="ourProjectsColInfo2">
+                                <div>Karangasem</div>
+                                <div>Локація</div>
+                            </div>
+                        </div>
+                        <div class="ourProjectsColText">
+                            Готель 5*, розташований на першій лінії одного з<br>найпопулярніших пляжів Балі
+                        </div>
+                        <a href="#" class="btn btn_grn">Деталі</a>
+                    </div>
+                </div>
+                <div class="ourProjectsCol tabRow3">
+                    <div class="ourProjectsColCarousel ourProjectsColCarousel2">
+                        <span class="projectsCheck"><img src="img/fire-ico.svg"> Гаряча пропозиція</span>
+                        <div class="item_slide ourProjectsColCarouselSlide active">
+                            <img src="img/awwa-slide-p-1.jpg" alt="Slide">
+                        </div>
+                        <div class="item_slide ourProjectsColCarouselSlide">
+                            <img src="img/awwa-slide-p-2.jpg" alt="Slide">
+                        </div>
+                        <div class="item_slide ourProjectsColCarouselSlide">
+                            <img src="img/awwa-slide-p-3.jpg" alt="Slide">
+                        </div>
+                        <div class="item_slide ourProjectsColCarouselSlide">
+                            <img src="img/awwa-slide-p-4.jpg" alt="Slide">
+                        </div>
+                        <div class="item_slide ourProjectsColCarouselSlide">
+                            <img src="img/awwa-slide-p-5.jpg" alt="Slide">
+                        </div>
+
+                        <div class="ourProjectsColCarouselDots">
+                            <div class="active"><img src="img/awwa-slide-p-1.jpg" alt="Slide"></div>
+                            <div><img src="img/awwa-slide-p-2.jpg" alt="Slide"></div>
+                            <div><img src="img/awwa-slide-p-3.jpg" alt="Slide"></div>
+                            <div><img src="img/awwa-slide-p-4.jpg" alt="Slide"></div>
+                            <div><img src="img/awwa-slide-p-5.jpg" alt="Slide"></div>
+                        </div>
+
+                        <div class="nav_slide">
+                            <button type="button"><span><img src="img/Icon-left.svg" alt="Arrow"></span></button>
+                            <div class="nav_dots">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <button type="button"><span><img src="img/Icon-right.svg" alt="Arrow"></span></button>
+                        </div>
+                    </div>
+                    <div class="ourProjectsColInfoWr">
+                        <div class="ourProjectsColInfo">
+                            <div class="ourProjectsColInfo1">AWWA Hotel</div>
+                            <div class="ourProjectsColInfo2">
+                                <div>135 000 $</div>
+                                <div>Інвестиція від</div>
+                            </div>
+                            <div class="ourProjectsColInfo2">
+                                <div>17 %</div>
+                                <div>Річний ROI</div>
+                            </div>
+                            <div class="ourProjectsColInfo2">
+                                <div>Сanggu</div>
+                                <div>Локація</div>
+                            </div>
+                        </div>
+                        <div class="ourProjectsColText">
+                            Апартаменти в популярній туристичній зоні Чангу з басейном завдовжки 25 метрів, баром та
+                            рестораном біля басейну.
+                        </div>
+                        <a href="#" class="btn btn_grn">Деталі</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec secOurProjects secOurProjects2">
+        <div class="container containerWr">
+            <div class="ourProjects">
+                <div class="ourProjectsT">
+                    <div>Дізнайтесь більше про наші<br>проекти та інвестиційні можливості</div>
+                    <span class="btn btn_grn showModal" data-source="mook-rock-сonsultation"
+                        data-target="#modal1">Отримати
+                        консультацію</span>
+                </div>
+                <img src="img/exclude.png" class="noBg" alt="Bg">
+                <img src="img/st.svg" class="stMain" alt="St">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="containerWr">
+            <div class="footerRow">
+                <div class="footerCol">
+                    <div class="footerNav">
+                        <div class="footerNavT">Карта сайту</div>
+                        <div class="footerNavWr">
+                            <div>
+                                <a href="#">Головна</a>
+                                <a href="#">Про нас</a>
+                                <a href="#">Проєкти</a>
+                                <a href="#">Про Балі</a>
+                                <a href="#">Партнерам</a>
+                            </div>
+                            <div class="footerNavWrMin">
+                                <a href="#">Блог</a>
+                                <a href="#">Поширені запитання</a>
+                                <a href="#">Карєра</a>
+                                <a href="#">Контакти</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerCol">
+                    <div class="footerCont">
+                        <div class="footerNavT">Контакти</div>
+                        <div class="footerContList">
+                            <div><img src="img/cont-1.svg" alt="Cont"><a href="https://wa.me/+6285190128083"
+                                    target="_blank">+6285190128083</a></div>
+                            <div><img src="img/cont-2.svg" alt="Cont"><a href="https://t.me/roman_bigwaves"
+                                    target="_blank">@roman_bigwaves</a></div>
+                            <div class="footerContListMd">
+                                <a href="#"><img src="img/instagram.svg" alt="Insta"></a>
+                                <a href="#"><img src="img/whatsapp-b.svg.svg" alt="Insta"></a>
+                                <a href="#"><img src="img/YouTube.svg" alt="Insta"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerCol">
+                    <div class="footerContOff">
+                        <div class="footerNavT">Офіс</div>
+                        <a href="/" class="logo"><img src="img/logo.svg" alt="Logo"></a>
+                        <div class="footerContOffT">
+                            Ми будемо раді зустрітися з вами<br>в нашому офісі у Чангу, Балі!
+                        </div>
+                        <!-- <a href="#" class="btn btn_grn">Відвідати офіс</a> -->
+                        <span class="btn btn_grn showModal" data-source="moon-rock-footer"
+                            data-target="#modal1">Відвідати офіс</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footerRow footerRowMT">
+                <div class="footerTerms"><a href="#">Політика конфіденційності</a></div>
+                <div class="footerCop">© BIG WAVES DEVELOPMENT 2025</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/selectCountry.js"></script>
+    <script src="js/fancyBox-3.0.47.js"></script>
+    <script src="js/modal-target.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.showModal').forEach(button => {
+                button.addEventListener('click', () => {
+                    const modalSelector = button.getAttribute('data-target');
+                    const modal = document.querySelector(modalSelector);
+                    if (modal) {
+                        modal.classList.add('active');
+                    }
+                });
+            });
+
+            document.querySelectorAll('.closeModalBtn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const modal = button.closest('.modalWrapper');
+                    if (modal) {
+                        modal.classList.remove('active');
+                    }
+                });
+            });
+
+            document.querySelectorAll('.modalWrapper').forEach(modal => {
+                modal.addEventListener('click', (event) => {
+                    if (event.target === modal) {
+                        modal.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.tabColBtn');
+            const contents2 = document.querySelectorAll('.tabRow');
+
+            buttons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    const isActive = button.classList.contains('active');
+
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    contents2.forEach(content => content.classList.remove('active'));
+
+                    if (!isActive) {
+                        button.classList.add('active');
+                        contents2[index].classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.tabColBtn2');
+            const contents2 = document.querySelectorAll('.tabRow2');
+
+            buttons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    const isActive = button.classList.contains('active');
+
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    contents2.forEach(content => content.classList.remove('active'));
+
+                    if (!isActive) {
+                        button.classList.add('active');
+                        contents2[index].classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.tabColBtn3');
+            const contents2 = document.querySelectorAll('.tabRow3');
+
+            buttons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    const isActive = button.classList.contains('active');
+
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    contents2.forEach(content => content.classList.remove('active'));
+
+                    if (!isActive) {
+                        button.classList.add('active');
+                        contents2[index].classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.tabColBtn4');
+            const contents2 = document.querySelectorAll('.tabRow4');
+
+            buttons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    const isActive = button.classList.contains('active');
+
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    contents2.forEach(content => content.classList.remove('active'));
+
+                    if (!isActive) {
+                        button.classList.add('active');
+                        contents2[index].classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.btnMoonNum');
+            const contents2 = document.querySelectorAll('.tabRowMoon');
+
+            buttons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    const isActive = button.classList.contains('active');
+
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                    contents2.forEach(content => content.classList.remove('active'));
+
+                    if (!isActive) {
+                        button.classList.add('active');
+                        contents2[index].classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        class Slider {
+            constructor(containerSelector) {
+                this.container = document.querySelector(containerSelector);
+                this.slides = this.container.querySelectorAll('.item_slide');
+                this.prevButton = this.container.querySelector('.nav_slide button:first-child');
+                this.nextButton = this.container.querySelector('.nav_slide button:last-child');
+                this.dots = this.container.querySelectorAll('.nav_dots span');
+                this.dots2 = this.container.querySelectorAll('.awwaSlideDots div');
+                this.dots3 = this.container.querySelectorAll('.koketitRow2 div');
+                this.dots4 = this.container.querySelectorAll('.ourProjectsColCarouselDots div');
+                this.currentIndex = 0;
+
+                this.init();
+            }
+
+            init() {
+                this.updateSlides();
+                this.prevButton.addEventListener('click', () => this.moveSlide(-1));
+                this.nextButton.addEventListener('click', () => this.moveSlide(1));
+                this.dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => this.goToSlide(index));
+                });
+                this.dots2.forEach((dot, index) => {
+                    dot.addEventListener('click', () => this.goToSlide(index));
+                });
+                this.dots3.forEach((dot, index) => {
+                    dot.addEventListener('click', () => this.goToSlide(index));
+                });
+                this.dots4.forEach((dot, index) => {
+                    dot.addEventListener('click', () => this.goToSlide(index));
+                });
+            }
+
+            moveSlide(direction) {
+                this.currentIndex = (this.currentIndex + direction + this.slides.length) % this.slides.length;
+                this.updateSlides();
+            }
+
+            goToSlide(index) {
+                this.currentIndex = index;
+                this.updateSlides();
+            }
+
+            updateSlides() {
+                this.slides.forEach((slide, index) => {
+                    slide.classList.toggle('active', index === this.currentIndex);
+                    slide.style.transition = 'transform 0.6s ease-in-out, opacity 0.6s';
+                    slide.style.transform = `translateX(${(index - this.currentIndex) * 100}%)`;
+                    slide.style.opacity = index === this.currentIndex ? '1' : '0';
+                });
+
+                this.dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === this.currentIndex);
+                });
+
+                this.dots2.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === this.currentIndex);
+                });
+
+                this.dots3.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === this.currentIndex);
+                });
+
+                this.dots4.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === this.currentIndex);
+                });
+            }
+        }
+
+        new Slider('.awwaSlide');
+        new Slider('.awwaSlide2');
+        new Slider('.awwaSlide3');
+        new Slider('.awwaSlide4');
+        new Slider('.ourProjectsColCarousel1');
+        new Slider('.ourProjectsColCarousel2');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            if (window.innerWidth < 980) {
+                new Slider('.newsSlider');
+                new Slider('.housesMainColSliderActive1');
+                new Slider('.housesMainColSliderActive2');
+                new Slider('.housesMainColSliderActive3');
+            }
+        });
+    </script>
+</body>
+
+</html>

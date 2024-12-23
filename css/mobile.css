@@ -1005,4 +1005,92 @@
         width: auto;
     }
 
+    .housesMainColSlider .nav_slide {
+        display: flex;
+    }
+
+    .housesMainColImg {
+        display: none;
+    }
+
+    .housesMainColImg.active {
+        display: block;
+    }
+
+    .btnMoonNum img {
+        display: none;
+    }
+
+    .btnMoonNum {
+        font-size: 15px;
+    }
+
+    .btnMoonNum span p {
+        font-size: 12px;
+    }
+
+    .moonSlideBtn {
+        gap: 8px;
+        justify-content: space-between;
+    }
+
+    .housesMainRow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .housesMainColDesc {
+        order: 1;
+    }
+
+    .housesMainColD2 i {
+        font-size: 32px;
+    }
+
+    .housesMainColSlider {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .titleMNone {
+        display: none;
+    }
+
+    .titleMBlock {
+        display: block;
+    }
+
+    .secHousesMain {
+        margin-top: 100px;
+    }
+
+    .secHousesMain2 {
+        margin-top: 100px;
+    }
+
+    .secHousesMain3 {
+        margin-top: 100px;
+    }
+
+    .housesMainColSlider .nav_slide {
+        justify-content: space-between;
+        width: -webkit-fill-available;
+    }
+
+    .housesMainColDesc {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+    }
+
+    .housesMainColD2:nth-last-child(2),
+    .btn {
+        grid-column: 1 / -1;
+    }
+
+    .headPrBqMoon p {
+        font-size: 8px;
+    }
+
+
 }
