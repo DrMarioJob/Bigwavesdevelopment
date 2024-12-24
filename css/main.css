@@ -1567,6 +1567,17 @@ button {
     z-index: 2;
 }
 
+.headPrWrapperHome::before {
+    content: '';
+    width: 653px;
+    height: 190px;
+    background: url(../img/home-head-left.svg) no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
 .headPrWrapper::after {
     content: '';
     width: 100%;
@@ -2917,5 +2928,431 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 48px;
+}
+
+.headAwCol2NameHome {
+    font-size: 32px;
+    line-height: 140%;
+}
+
+.headAwCol2Home div span {
+    font-size: 27px;
+}
+
+.headAwCol2Home div p {
+    font-size: 19px;
+    line-height: 120%;
+}
+
+.headHWt img {
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.9));
+    animation: ring 0.5s infinite;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.headAwCol1Home {
+    grid-template-columns: 190px 1fr;
+    margin-bottom: 20px;
+}
+
+.secHeadInfo3 {
+    margin-top: -215px;
+}
+
+.headPrWrapperHome::after {
+    height: 250px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.01));
+}
+
+.ourProjectsRowHome .ourProjectsColCarousel {
+    min-height: auto;
+}
+
+.ourProjectsRowHome .ourProjectsColInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.ourProjectsRowHome .ourProjectsColInfo div:nth-child(1) {
+    grid-column: 1 / -1;
+}
+
+.ourProjectsRowHome .ourProjectsColInfo1 {
+    margin-bottom: 20px;
+}
+
+.ourProjectsRowHome .ourProjectsColCarouselDots div {
+    height: auto;
+}
+
+.secHomeCalcRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+    gap: 60px;
+}
+
+.secHomeCalcCol {
+    width: -webkit-fill-available;
+}
+
+.secHomeCalcColLabel {
+    border-radius: 40px;
+    background: #2c2c2c;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+    cursor: pointer;
+    border: 2px solid #2c2c2c;
+    transition: all .3s ease;
+}
+
+.secHomeCalcColLabel img {
+    max-width: 180px;
+    border-radius: 40px 0 0 40px;
+}
+
+.secHomeCalcColLabel.active {
+    background: #434343;
+    border-color: #d9d9d9;
+}
+
+.tabCalcHome5 {
+    display: none;
+}
+
+.tabCalcHome5.active {
+    display: flex;
+    margin-top: 43px;
+    align-items: center;
+    justify-content: center;
+}
+
+.secHomeCalcColLabel input {
+    display: none;
+}
+
+.calcLabel {
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    background: #1e1e1e;
+    margin-left: 30px;
+    border: 1px solid #b3b3b3;
+    position: relative;
+}
+
+.calcLabel::after {
+    content: '';
+    background: #b3b3b3;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+    opacity: 0;
+}
+
+.secHomeCalcColLabel input:checked~.calcLabel::after {
+    opacity: 1;
+}
+
+.secHomeGetOfferRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.secHomeGetOfferRow img {
+    max-width: 100%;
+}
+
+.ourVideoHome {
+    height: auto;
+}
+
+.secHomeGetOfferColRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.getOfferBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.getOfferBlock label {
+    height: 46px;
+    justify-content: start;
+    gap: 20px;
+}
+
+.getOfferBlock b {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2EAFA3;
+}
+
+.homeTimeInvestRow {
+    margin-top: 48px;
+}
+
+.homeTimeInvestRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.homeTimeInvestCol {
+    border-radius: 40px;
+    overflow: hidden;
+    border: 2px solid #383838;
+    padding: 20px;
+}
+
+.homeInvestSlider .nav_slide {
+    display: none;
+}
+
+.homeInvestSlider .item_slide {
+    display: flex;
+}
+
+.homeTimeInvestCol {
+    gap: 25px;
+    flex-direction: column;
+    align-items: start;
+}
+
+.homeTimeInvestCol2 b {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.homeTimeInvestCol2 span {
+    font-size: 12px;
+}
+
+.homeTimeInvestCol2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.homeTimeInvestCol2LWr {
+    height: 2px;
+    background: #b2b2b2;
+    border-radius: 2px;
+    width: -webkit-fill-available;
+    position: relative;
+}
+
+.homeTimeInvestCol2L {
+    background: #2EAFA3;
+    height: 2px;
+    transition: width 1s linear;
+}
+
+.homeTimeInvestRow2 {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    width: -webkit-fill-available;
+    align-items: center;
+}
+
+.sec .homeTimeInvestCol2L {
+    width: 0px;
+}
+
+.sec.visible .homeTimeInvestCol2L {
+    width: auto;
+}
+
+.homeTimeInvestRow3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.homeTimeInvestList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    line-height: 140%;
+    font-size: 14px;
+}
+
+.homeTimeInvestCol .titleM {
+    font-size: 24px;
+}
+
+.f14 {
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.invHomeList1 img {
+    max-height: 96px;
+    border-radius: 0 40px 40px 0;
+}
+
+.invHomeList1 {
+    border-radius: 40px;
+    overflow: hidden;
+    background: #2c2c2c;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: -webkit-fill-available;
+    line-height: 140%;
+}
+
+.homeTimeInvestColGp {
+    gap: 15px;
+}
+
+.secHomePBDRow {
+    display: grid;
+    grid-template-columns: 1fr 690px;
+    gap: 50px;
+}
+
+.secHomePBDRow img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.secHomePBDCol {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.secHomePBDCol .titleM {
+    margin-bottom: 30px;
+}
+
+.secHomePBDCol span {
+    line-height: 140%;
+    font-size: 14px;
+}
+
+.secHomePBDRow2 {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    gap: 85px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.secHomePBDCol2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.secHomePBDCol2 img {
+    width: 55px;
+}
+
+.secHomeNewsBali .topNews {
+    position: relative;
+}
+
+.secHomeNewsBali .topNews .topNewsDesc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.secHomeNewsBali .topNews .topNewsPic img {
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.secHomeNewsBali .topNews:hover .topNewsPic img {
+    transform: scale(1.05);
+}
+
+.secHomeNewsBali .playBtn img {
+    border-radius: 0 !important;
+}
+
+.secHomeNewsBali .playBtn {
+    top: 20%;
+    transform: translate(-50%, -20%);
+}
+
+.secHomeNewsBali .topNews:hover .playBtn {
+    background: #2EAFA3;
+}
+
+.secHomeSPSRow {
+    display: grid;
+    grid-template-columns: 1fr 895px;
+    gap: 30px;
+}
+
+.secHomeSPSCol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.secHomeSPSCol img {
+    border-radius: 15px;
+}
+
+.secHomeSPSCol p {
+    line-height: 140%;
+    font-size: 14px;
+}
+
+.secHomeSPSColP {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 2;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.concretePlantNumHome {
     margin-top: 48px;
 }

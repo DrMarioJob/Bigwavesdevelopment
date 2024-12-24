@@ -1129,4 +1129,16 @@
         margin-top: 100px;
     }
 
+    .homeInvestSlider .nav_slide {
+        display: flex;
+    }
+
+    .homeInvestSlider .item_slide {
+        display: none;
+    }
+
+    .homeInvestSlider .item_slide.active {
+        display: flex;
+    }
+
 }
