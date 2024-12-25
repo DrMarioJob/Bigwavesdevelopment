@@ -146,6 +146,29 @@ body {
     font-size: 16px;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2EAFA3;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #323232;
+}
+
+::selection {
+    background-color: #2EAFA3;
+    color: #fff;
+}
+
+::-moz-selection {
+    background-color: #2EAFA3;
+    color: #fff;
+}
+
 .sec {
     opacity: 0;
     transform: translateY(50px);
@@ -3355,4 +3378,8 @@ button {
 
 .concretePlantNumHome {
     margin-top: 48px;
+}
+
+.homeHLogoMb {
+    display: none;
 }

@@ -1141,4 +1141,132 @@
         display: flex;
     }
 
+    .secHeadInfo2Title {
+        text-align: center;
+    }
+
+    .headPrWrapperHome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .headAwCol2 div span {
+        font-size: 20px;
+    }
+
+    .headAwCol2Home div p {
+        font-size: 14px;
+    }
+
+    .headAwCol1Home .headHWt {
+        position: absolute;
+        top: -20px;
+        right: 50px;
+    }
+
+    .mt80 {
+        margin-top: 80px;
+    }
+
+    .secHomeCalcRow {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .calcLabel {
+        margin-left: 10px;
+    }
+
+    .secHomeCalcColLabel img {
+        max-width: 145px;
+    }
+
+    .secHomeGetOfferRow {
+        grid-template-columns: 1fr;
+    }
+
+    .secHomeGetOfferColRow {
+        grid-template-columns: 1fr;
+    }
+
+    .homeTimeInvestRow {
+        grid-template-columns: 1fr;
+    }
+
+    .homeTimeInvestRow2 {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .homeTimeInvestRow3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .invHomeList1 {
+        font-size: 12px;
+        padding-right: 20px;
+    }
+
+    .secHomePBDRow {
+        grid-template-columns: 1fr;
+    }
+
+    .secHomePBDCol:nth-child(2) {
+        order: -1;
+    }
+
+    .secHomeSPSCol:nth-child(2) {
+        order: -1;
+    }
+
+    .secHomePBDRow2 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .secHomePBDCol2 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .secHomeNewsBali .topNews .topNewsDesc {
+        position: relative;
+    }
+
+    .secHomeNewsBali .topNews .topNewsPic img {
+        border-radius: 40px;
+    }
+
+    .secHomeSPSRow {
+        grid-template-columns: 1fr;
+    }
+
+    .secHomeSPSCol img {
+        max-width: 100%;
+    }
+
+    .secHomeSPSColP {
+        left: 20px;
+        bottom: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .homeHLogoMb {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -15%);
+        display: block;
+    }
+
+    .homeHLogoMb img {
+        width: 160px;
+        position: relative;
+        z-index: 2;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
+    }
+
 }
