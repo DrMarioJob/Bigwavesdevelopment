@@ -1092,6 +1092,10 @@
         font-size: 8px;
     }
 
+    .mDots {
+        min-height: auto;
+    }
+
     .mDots img {
         min-height: auto;
     }
@@ -1267,6 +1271,27 @@
         position: relative;
         z-index: 2;
         filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
+    }
+
+    .tabColBtn4,
+    .tabColBtn3,
+    .tabColBtn2,
+    .tabColBtn {
+        font-size: 14px;
+    }
+
+    .ourProjectsColInfo2 div:first-child {
+        font-size: 14px;
+    }
+
+    .ourProjectsColInfo {
+        gap: 10px;
+    }
+
+    .ourProjectsColCarouselDots div img {
+        object-fit: cover;
+        min-height: 48px;
+        max-width: 100%;
     }
 
 }
